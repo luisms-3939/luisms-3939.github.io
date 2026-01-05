@@ -1,0 +1,12 @@
+markdown: kramdown 
+theme: minima
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+collections:
+  certifications:
+    output: true
+    permalink: /certifications/:name/
