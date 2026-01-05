@@ -1,211 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luis Modesto - Data Analyst Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Modesto - Data Analyst Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0f172a;
+        }
+        
+        .main-container {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            min-height: 100vh;
+        }
+        
+        /* Left Sidebar */
+        .sidebar {
+            background: #1e293b;
+            padding: 3rem 2rem;
+            border-right: 1px solid #334155;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        .profile-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #14b8a6;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(20, 184, 166, 0.3);
+        }
+        
+        .profile-section h1 {
+            font-size: 1.8rem;
+            color: #f1f5f9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .profile-section .title {
+            color: #14b8a6;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .profile-section .tagline {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .sidebar-section h2 {
+            color: #14b8a6;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #14b8a6;
+            padding-bottom: 0.5rem;
+        }
+        
+        .contact-list {
+            list-style: none;
+        }
+        
+        .contact-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+        
+        .contact-list li svg {
+            width: 20px;
+            height: 20px;
+            fill: #14b8a6;
+            flex-shrink: 0;
+        }
+        
+        .contact-list a {
+            color: #14b8a6;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .skill-item-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .skill-name-sidebar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+        
+        .skill-name-sidebar svg {
+            width: 18px;
+            height: 18px;
+            fill: #14b8a6;
+            margin-right: 0.5rem;
+        }
+        
+        .skill-name-sidebar > span:first-child {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .skill-percentage {
+            color: #14b8a6;
+            font-weight: 600;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #0f172a;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .skill-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #0d9488, #14b8a6);
+            border-radius: 10px;
+            transition: width 1.5s ease-out;
+        }
+        
+        /* Right Content Area */
+        .content {
+            padding: 3rem 4rem;
+            overflow-y: auto;
+        }
+        
+        .content-section {
+            margin-bottom: 4rem;
+        }
+        
+        .content-section h2 {
+            color: #14b8a6;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #14b8a6;
+            padding-bottom: 0.5rem;
+        }
+        
+        .about-text {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .projects-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 300px;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(20, 184, 166, 0.3);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .project-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .project-content h3 {
+            color: #f1f5f9;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-content p {
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+        
+        .project-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        
+        .tag {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid #334155;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: #14b8a6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .btn:hover {
+            background: #0d9488;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #14b8a6;
+            border: 2px solid #14b8a6;
+        }
+        
+        .btn-secondary:hover {
+            background: #14b8a6;
+            color: white;
+        }
+        
+        .experience-item {
+            background: #1e293b;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #14b8a6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        
+        .experience-title {
+            color: #f1f5f9;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .experience-company {
+            color: #14b8a6;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .experience-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        .experience-description {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+        
+        .experience-description ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .experience-description li {
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1e293b;
+            color: #94a3b8;
+            border-top: 1px solid #334155;
+        }
+        
+        @media (max-width: 1024px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: relative;
+                height: auto;
+            }
+            
+            .content {
+                padding: 2rem;
+            }
+            
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-image {
+                min-height: 250px;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-
-<div class="main-container">
-
-<!-- SIDEBAR -->
-<aside class="sidebar">
-  <div class="profile-section">
-    <img class="profile-image" src="https://raw.githubusercontent.com/luisms-3939/luisms-3939/main/profile.jpg" alt="Profile photo">
-    <h1>Luis Modesto</h1>
-    <p class="title">Data Analyst</p>
-    <p class="tagline">Transforming data into actionable insights</p>
-  </div>
-
-  <div class="sidebar-section">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8..."/></svg>
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-      </li>
-      <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M..."/></svg>
-        <span>+1 (555) 123-4567</span>
-      </li>
-      <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M..."/></svg>
-        <span>Barcelona, Spain</span>
-      </li>
-      <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M..."/></svg>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      </li>
-      <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M..."/></svg>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="sidebar-section">
-    <h2>Skills</h2>
-    <div class="skills-list">
-
-      <div class="skill-item-sidebar">
-        <div class="skill-name-sidebar">
-          <span>Python</span>
-          <span class="skill-percentage">90%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div>
-      </div>
-
-      <div class="skill-item-sidebar">
-        <div class="skill-name-sidebar">
-          <span>SQL</span>
-          <span class="skill-percentage">85%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
-      </div>
-
-      <div class="skill-item-sidebar">
-        <div class="skill-name-sidebar">
-          <span>Data Visualization</span>
-          <span class="skill-percentage">85%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
-      </div>
-
-      <div class="skill-item-sidebar">
-        <div class="skill-name-sidebar">
-          <span>Pandas & NumPy</span>
-          <span class="skill-percentage">88%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
-      </div>
-
-      <div class="skill-item-sidebar">
-        <div class="skill-name-sidebar">
-          <span>Machine Learning</span>
-          <span class="skill-percentage">75%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div>
-      </div>
-
-      <div class="skill-item-sidebar">
-        <div class="skill-name-sidebar">
-          <span>Excel & Power BI</span>
-          <span class="skill-percentage">80%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div>
-      </div>
-
-    </div>
-  </div>
-</aside>
-
-<!-- MAIN CONTENT -->
-<main class="content">
-
-  <section class="content-section">
-    <h2>About Me</h2>
-    <p class="about-text">I'm a data analyst passionate about turning raw data into meaningful insights.</p>
-    <p class="about-text">I specialize in building interactive dashboards, automated pipelines, and clear visualizations.</p>
-    <p class="about-text">When I'm not analyzing data, you can find me exploring Barcelona or learning new tools.</p>
-  </section>
-
-  <section class="content-section">
-    <h2>Experience</h2>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <div class="experience-company">Company Name</div>
-          <div class="experience-title">Senior Data Analyst</div>
-        </div>
-        <div class="experience-date">2022 - Present</div>
-      </div>
-      <div class="experience-description">
-        <ul>
-          <li>Led data analysis initiatives that increased operational efficiency.</li>
-          <li>Built automated reporting dashboards using Python and SQL.</li>
-          <li>Collaborated with cross-functional teams to identify key insights.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <div class="experience-company">Previous Company</div>
-          <div class="experience-title">Data Analyst</div>
-        </div>
-        <div class="experience-date">2020 - 2022</div>
-      </div>
-      <div class="experience-description">
-        <ul>
-          <li>Performed statistical analysis on customer behavior.</li>
-          <li>Created data pipelines to automate ETL processes.</li>
-          <li>Presented insights to stakeholders through compelling dashboards.</li>
-        </ul>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="content-section">
-    <h2>Featured Projects</h2>
-
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <div class="project-content">
-          <div>
-            <h3>Sales Performance Dashboard</h3>
-            <p>Built an interactive dashboard analyzing sales trends and KPIs.</p>
-          </div>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Plotly</span>
-              <span class="tag">Pandas</span>
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src=https://raw.githubusercontent.com/luisms-3939/luisms-3939.github.io/main/images/pic2.png alt="Luis Modesto" class="profile-image">
+                <h1>Luis Modesto</h1>
+                <p class="title">Data Analyst</p>
+                <p class="tagline">Transforming data into actionable insights</p>
             </div>
-            <div class="project-links">
-              <a href="#" class="btn">View Project</a>
-              <a href="#" class="btn btn-secondary">GitHub</a>
+            
+            <div class="sidebar-section">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <span>Barcelona, Spain</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </div>
-        <div class="project-image">
-          <img src="https://raw.githubusercontent.com/luisms-3939/luisms-3939/main/project1.png" alt="Project image">
-        </div>
-      </div>
+            
+            <div class="sidebar-section">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item-sidebar">
+                        <div class="skill-name-sidebar">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+                                Python
+                            </span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item-sidebar">
+                        <div class="skill-name-sidebar">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
+                                SQL
+                            </span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item-sidebar">
+                        <div class="skill-name-sidebar">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zM160 224c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V256c0-17.7 14.3-32 32-32zm128-64V320c0 17.7-14.3 32-32 32s-32-14.3-32-32V160c0-17.7 14.3-32 32-32s32 14.3 32 32zm64 32c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32zM480 96V320c0 17.7-14.3 32-32 32s-32-14.3-32-32V96c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg>
+                                Data Visualization
+                            </span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item-sidebar">
+                        <div class="skill-name-sidebar">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                                Pandas & NumPy
+                            </span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item-sidebar">
+                        <div class="skill-name-sidebar">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M184 0c30.9 0 56 25.1 56 56V456c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56V56c0-30.9 25.1-56 56-56z"/></svg>
+                                Machine Learning
+                            </span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item-sidebar">
+                        <div class="skill-name-sidebar">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM155.7 250.2L192 302.1l36.3-51.9c7.6-10.9 22.6-13.5 33.4-5.9s13.5 22.6 5.9 33.4L221.3 344l46.4 66.2c7.6 10.9 5 25.8-5.9 33.4s-25.8 5-33.4-5.9L192 385.8l-36.3 51.9c-7.6 10.9-22.6 13.5-33.4 5.9s-13.5-22.6-5.9-33.4L162.7 344l-46.4-66.2c-7.6-10.9-5-25.8 5.9-33.4s25.8-5 33.4 5.9z"/></svg>
+                                Excel & Power BI
+                            </span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Right Content Area -->
+        <main class="content">
+            <section class="content-section">
+                <h2>About Me</h2>
+                <p class="about-text">I'm a data analyst passionate about turning complex datasets into actionable insights. With a strong foundation in statistical analysis and programming, I help organizations make data-driven decisions.</p>
+                <p class="about-text">I specialize in building interactive dashboards, performing advanced statistical analysis, and creating compelling data visualizations that tell stories and drive business value.</p>
+                <p class="about-text">When I'm not analyzing data, you can find me exploring new visualization techniques, contributing to open-source projects, or learning about the latest developments in data science.</p>
+            </section>
+            
+            <section class="content-section">
+                <h2>Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-company">Company Name</div>
+                            <div class="experience-title">Senior Data Analyst</div>
+                        </div>
+                        <div class="experience-date">2022 - Present</div>
+                    </div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Led data analysis initiatives that increased operational efficiency by 25%</li>
+                            <li>Built automated reporting dashboards using Python and Power BI</li>
+                            <li>Collaborated with cross-functional teams to identify key business metrics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-company">Previous Company</div>
+                            <div class="experience-title">Data Analyst</div>
+                        </div>
+                        <div class="experience-date">2020 - 2022</div>
+                    </div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Performed statistical analysis on customer behavior data</li>
+                            <li>Created data pipelines to automate ETL processes</li>
+                            <li>Presented insights to stakeholders through compelling visualizations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div>
+                                <div class="tag" style="display: inline-block; margin-bottom: 1rem; background: #14b8a6; color: white; border: none;">Sales Dashboard</div>
+                                <h3>Sales Performance Dashboard</h3>
+                                <p>Built an interactive dashboard analyzing sales trends across multiple regions, identifying key growth opportunities and underperforming segments.</p>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Plotly</span>
+                                    <span class="tag">Pandas</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn">View Project</a>
+                                    <a href="#" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://raw.githubusercontent.com/luisms-3939/luisms-3939.github.io/main/images/Recession%20period%20statistics.png" alt="Sales Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div>
+                                <div class="tag" style="display: inline-block; margin-bottom: 1rem; background: #14b8a6; color: white; border: none;">Customer Segmentation</div>
+                                <h3>Customer Segmentation Analysis</h3>
+                                <p>Applied clustering algorithms to segment customers based on purchasing behavior, resulting in targeted marketing strategies.</p>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Scikit-learn</span>
+                                    <span class="tag">K-Means</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn">View Project</a>
+                                    <a href="#" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://raw.githubusercontent.com/luisms-3939/luisms-3939.github.io/main/images/Bike_Sharing_Insights%20-Chicago.png" alt="Customer Segmentation" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div>
+                                <div class="tag" style="display: inline-block; margin-bottom: 1rem; background: #14b8a6; color: white; border: none;">Web Scraping Pipeline</div>
+                                <h3>Web Scraping & Data Pipeline</h3>
+                                <p>Automated data collection from multiple sources, cleaned and transformed data, and created a pipeline for daily updates.</p>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">BeautifulSoup</span>
+                                    <span class="tag">SQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn">View Project</a>
+                                    <a href="#" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://raw.githubusercontent.com/luisms-3939/luisms-3939.github.io/main/images/DATAREPORT.png" alt="Web Scraping Pipeline" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-      <div class="project-card">
-        <div class="project-content">
-          <div>
-            <h3>Customer Segmentation Analysis</h3>
-            <p>Applied clustering algorithms to segment customers and identify patterns.</p>
-          </div>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Scikit-learn</span>
-              <span class="tag">K-Means</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="btn">View Project</a>
-              <a href="#" class="btn btn-secondary">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-image">
-          <img src="https://raw.githubusercontent.com/luisms-3939/luisms-3939/main/project2.png" alt="Project image">
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-content">
-          <div>
-            <h3>Web Scraping & Data Pipeline</h3>
-            <p>Automated data collection from multiple sources and built a clean ETL pipeline.</p>
-          </div>
+       <footer>
+        <p>&copy; 2026 Luis Modesto. Built with HTML & CSS, hosted on GitHub Pages.</p>
+    </footer>
+</body>
+</html>
