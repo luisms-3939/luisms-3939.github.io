@@ -1,0 +1,49 @@
+<div class="project-card">
+  <div class="project-content">
+    <div>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.summary }}</p>
+    </div>
+
+    <div class="project-fo<div class="project-card">
+  <div class="project-content">
+    <div>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.summary }}</p>
+    </div>
+
+    <div class="project-footer">
+      <div class="project-tags">
+        {% for tag in project.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="project-links">
+        <a href="{{ project.url }}" class="btn">View Project</a>
+        <a href="{{ project.github }}" class="btn btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-image">
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+  </div>
+</div>ter">
+      <div class="project-tags">
+        {% for tag in project.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="project-links">
+        <a href="{{ project.url }}" class="btn">View Project</a>
+        <a href="{{ project.github }}" class="btn btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-image">
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+  </div>
+</div>
