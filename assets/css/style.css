@@ -1,0 +1,574 @@
+/********************************************
+ * 1. DESIGN TOKENS — COLORS, SPACING, TYPE
+ ********************************************/
+
+/* COLOR PALETTE */
+:root,
+  .theme-dark {
+  --navy: #0A1A2F;
+  --blue: #3A8DFF;
+  --teal: #4CC9A6;
+  --offwhite: #F7F9FC;
+  --gray-light: #E3E8EF;
+  --charcoal: #1E1E1E;
+  --slate: #5A6A7A;
+
+  --motion-fade-duration: 0.8s;
+  --motion-slide-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+
+  /* SEMANTIC COLORS */
+  --bg-main: var(--navy);
+  --bg-card: #1e293b;
+  --text-main: var(--offwhite);
+  --text-muted: var(--slate);
+  --accent: var(--teal);
+  --accent-strong: var(--blue);
+
+  /* SPACING SCALE (Tailwind-style) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* TYPOGRAPHY SCALE */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  /* RADII */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+
+  /* SHADOWS */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 8px 25px rgba(20, 184, 166, 0.3);
+
+  /* TRANSITIONS */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+
+  /* Z-INDEX SCALE */
+  --z-sidebar: 999;
+  --z-menu-btn: 1000;
+}
+
+/********************************************
+ * 2. BASE STYLES
+ ********************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+  background: var(--bg-main);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-top);
+}
+
+/********************************************
+ * 3. LAYOUT
+ ********************************************/
+
+.main-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: var(--bg-card);
+  padding: var(--space-12) var(--space-8);
+  border-right: 1px solid var(--slate);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* MOBILE MENU BUTTON */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: var(--z-menu-btn);
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xl);
+  cursor: pointer;
+}
+
+/********************************************
+ * 4. COMPONENTS
+ ********************************************/
+
+/* PROFILE */
+.profile-section {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  margin-bottom: var(--space-6);
+  object-fit: cover;
+  box-shadow: var(--shadow-hover);
+}
+
+.profile-section h1 {
+  font-size: var(--text-2xl);
+  color: var(--offwhite);
+  margin-bottom: var(--space-2);
+}
+
+.profile-section .title {
+  color: var(--accent);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.profile-section .tagline {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+/* SIDEBAR SECTIONS */
+.sidebar-section {
+  margin-bottom: var(--space-12);
+}
+
+.sidebar-section h2 {
+  color: var(--accent);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-4);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: var(--space-2);
+}
+
+/* CONTACT LIST */
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--gray-light);
+  font-size: var(--text-sm);
+}
+
+.contact-list li svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent);
+}
+
+.contact-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* SKILLS */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.skill-item-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.skill-name-sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray-light);
+  font-size: var(--text-sm);
+}
+
+.skill-name-sidebar svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--accent);
+}
+
+.skill-percentage {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 8px;
+  background: var(--bg-main);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal), var(--accent));
+  border-radius: var(--radius-md);
+  transition: width 1.5s ease-out;
+}
+
+/* CONTENT AREA */
+.content {
+  padding: var(--space-12) var(--space-16);
+  overflow-y: auto;
+}
+
+.content-section {
+  margin-bottom: var(--space-16);
+}
+
+.content-section h2 {
+  color: var(--accent);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-6);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: var(--space-2);
+}
+
+.about-text {
+  color: var(--gray-light);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  margin-bottom: var(--space-4);
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.project-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--slate);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 300px;
+
+  /* One unified transition */
+  transition: transform var(--motion-slide-duration) var(--motion-ease),
+              box-shadow var(--motion-slide-duration) var(--motion-ease);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-content h3 {
+  color: var(--offwhite);
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+}
+
+.project-content p {
+  color: var(--slate);
+  margin-bottom: var(--space-6);
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.project-footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.tag {
+  background: var(--bg-main);
+  color: var(--slate);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 20px;
+  font-size: var(--text-sm);
+  border: 1px solid var(--slate);
+}
+
+.tag:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  transition:
+    background var(--motion-fade-duration) var(--motion-ease),
+    color var(--motion-fade-duration) var(--motion-ease),
+    border-color var(--motion-fade-duration) var(--motion-ease);
+}
+
+.project-links {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+
+  /* Unified transition using motion tokens */ 
+  transition: 
+    background var(--motion-fade-duration) var(--motion-ease), 
+    color var(--motion-fade-duration) var(--motion-ease), 
+    border-color var(--motion-fade-duration) var(--motion-ease);
+
+  font-size: var(--text-base);
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--accent-strong);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.theme-toggle-btn {
+  margin-top: var(--space-8);
+  padding: var(--space-3) var(--space-4);
+  width: 100%;
+  background: var(--bg-card);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+
+  transition:
+    background var(--motion-fade-duration) var(--motion-ease),
+    color var(--motion-fade-duration) var(--motion-ease),
+    border-color var(--motion-fade-duration) var(--motion-ease);
+}
+
+.theme-toggle-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* EXPERIENCE */
+.experience-item {
+  background: var(--bg-card);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent);
+  margin-bottom: var(--space-6);
+}
+
+.experience-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  transition:
+    transform var(--motion-slide-duration) var(--motion-ease),
+    box-shadow var(--motion-slide-duration) var(--motion-ease);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-3);
+}
+
+.experience-title {
+  color: var(--offwhite);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.experience-company {
+  color: var(--accent);
+  font-size: var(--text-base);
+  margin-bottom: var(--space-1);
+}
+
+.experience-date {
+  color: var(--slate);
+  font-size: var(--text-sm);
+}
+
+.experience-description {
+  color: var(--gray-light);
+  line-height: 1.6;
+}
+
+.experience-description ul {
+  margin-left: var(--space-6);
+  margin-top: var(--space-2);
+}
+
+.experience-description li {
+  margin-bottom: var(--space-2);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: var(--space-8);
+  background: var(--bg-card);
+  color: var(--slate);
+  border-top: 1px solid var(--slate);
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--motion-fade-duration) var(--motion-ease),
+              transform var(--motion-slide-duration) var(--motion-ease);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/********************************************
+ * 5. RESPONSIVE BREAKPOINTS
+ ********************************************/
+
+/* 1024px */
+@media (max-width: 1024px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -350px;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    transition: left var(--transition-medium);
+    z-index: var(--z-sidebar);
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: var(--space-8);
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    min-height: 250px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .content {
+    padding: var(--space-6);
+  }
+
+  .content-section {
+    margin-bottom: var(--space-12);
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .project-image img {
+    height: 200px;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .btn,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
