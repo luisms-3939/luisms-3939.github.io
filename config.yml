@@ -1,12 +1,20 @@
-markdown: kramdown 
+markdown: kramdown
 theme: minima
+
+title: "Luis Modesto - Portfolio"
+email: "luisitu.1986@gmail.com"
+description: "Portfolio de Data Analyst"
+baseurl: ""
+url: "https://luisms-3939.github.io"
 
 collections:
   projects:
     output: true
     permalink: /projects/:name/
-
-collections:
   certifications:
     output: true
     permalink: /certifications/:name/
+
+# GitHub Pages plugins seguros
+plugins:
+  - jekyll-feed
