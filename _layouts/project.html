@@ -2,16 +2,32 @@
 layout: default
 ---
 
-<div class="content-section fade-in">
-  <h2>{{ page.title }}</h2>
-
-  <p class="about-text">{{ page.summary }}</p>
-
+<article class="content-section fade-in">
+  <h1>{{ page.title }}</h1>
+  
+  {% if page.image %}
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-featured-image">
+  {% endif %}
+  
+  <div class="project-content">
+    {{ content }}
+  </div>
+  
+  {% if page.technologies %}
   <div class="project-tags">
-    {% for tag in page.tags %}
-      <span class="tag">{{ tag }}</span>
+    <strong>Tecnologías:</strong>
+    {% for tech in page.technologies %}
+    <span class="tag">{{ tech }}</span>
     {% endfor %}
   </div>
-
-  {{ content }}
-</div>
+  {% endif %}
+  
+  <div class="project-links">
+    {% if page.github %}
+    <a href="{{ page.github }}" class="btn" target="_blank">Ver en GitHub</a>
+    {% endif %}
+    {% if page.demo %}
+    <a href="{{ page.demo }}" class="btn btn-secondary" target="_blank">Ver Demo</a>
+    {% endif %}
+  </div>
+</article>
