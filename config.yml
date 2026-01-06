@@ -10,10 +10,10 @@ url: "https://luisms-3939.github.io"
 collections:
   projects:
     output: true
-    permalink: /projects/:name/
+    permalink: /projects/:path/
   certifications:
     output: true
-    permalink: /certifications/:name/
+    permalink: /certifications/:path/
 
 # GitHub Pages plugins seguros
 plugins:
