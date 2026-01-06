@@ -4,7 +4,6 @@ title: "sales dashboard"
 description: "Automated data collection from multiple sources, cleaned and transformed data, and created a pipeline for daily updates."
 technologies: ["Python", "BeautifulSoup", "SQL", "Pandas"]
 github: "https://github.com/tuusuario/dashboard"
-demo: "https://demo.tusitio.com"  # Opcional
 image: "/assets/images/projects/dashboard.jpg"  # Opcional
 ---
 
