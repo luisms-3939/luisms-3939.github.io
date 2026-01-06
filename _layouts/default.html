@@ -19,75 +19,53 @@
 
   </div>
 
-  {% include footer.html %}
+   {% include footer.html %}
 
   <script defer>
+    // Función para el sidebar
     function toggleSidebar() {
       document.querySelector('.sidebar').classList.toggle('open');
     }
-  </script>
 
-  <script defer>
-  function toggleTheme() {
-    const body = document.body;
-
-    // Toggle class
-    body.classList.toggle("theme-dark");
-
-    // Save preference
-    if (body.classList.contains("theme-dark")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
+    // Función para el tema oscuro
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle("theme-dark");
+      localStorage.setItem("theme", body.classList.contains("theme-dark") ? "dark" : "light");
     }
-  }
 
-  // Load saved theme
-  document.addEventListener("DOMContentLoaded", () => {
-    const saved = localStorage.getItem("theme");
+    // Cargar tema guardado
+    document.addEventListener("DOMContentLoaded", () => {
+      // Tema
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("theme-dark");
+      }
 
-    if (saved === "dark") {
-      document.body.classList.add("theme-dark");
-    }
-  });
-  </script>
+      // Animaciones fade-in
+      const fadeElements = document.querySelectorAll(".fade-in");
+      const fadeObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      }, { threshold: 0.2 });
+      fadeElements.forEach(el => fadeObserver.observe(el));
 
-
-  <script defer>
-  document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".fade-in");
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
+      // Barras de habilidades
+      const skillBars = document.querySelectorAll(".skill-bar-fill");
+      const barObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.width = entry.target.dataset.width;
+          }
+        });
+      }, { threshold: 0.4 });
+      
+      skillBars.forEach(bar => {
+        bar.dataset.width = bar.style.width;
+        bar.style.width = "0%";
+        barObserver.observe(bar);
       });
-    }, { threshold: 0.2 });
-
-    elements.forEach(el => observer.observe(el));
-  });
-  </script>
-
-  <script defer>
-  document.addEventListener("DOMContentLoaded", () => {
-    const bars = document.querySelectorAll(".skill-bar-fill");
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.width = entry.target.dataset.width;
-        }
-      });
-    }, { threshold: 0.4 });
-
-    bars.forEach(bar => {
-      bar.dataset.width = bar.style.width;
-      bar.style.width = "0%";
-      observer.observe(bar);
     });
-  });
   </script>
-
 </body>
 </html>
