@@ -2,9 +2,8 @@
  * 1. DESIGN TOKENS — COLORS, SPACING, TYPE
  ********************************************/
 
-/* COLOR PALETTE */
-:root,
-  .theme-dark {
+/* COLOR PALETTE - TEMA CLARO (default) */
+:root {
   --navy: #0A1A2F;
   --blue: #3A8DFF;
   --teal: #4CC9A6;
@@ -13,18 +12,40 @@
   --charcoal: #1E1E1E;
   --slate: #5A6A7A;
 
-  --motion-fade-duration: 0.8s;
-  --motion-slide-duration: 0.6s;
-  --motion-ease: cubic-bezier(0.4, 0.0, 0.2, 1);
-
-
-  /* SEMANTIC COLORS */
-  --bg-main: var(--navy);
-  --bg-card: #1e293b;
-  --text-main: var(--offwhite);
+  /* SEMANTIC COLORS - TEMA CLARO */
+  --bg-main: var(--offwhite);      /* ← CLARO: fondo blanco */
+  --bg-card: white;
+  --text-main: var(--navy);        /* ← CLARO: texto oscuro */
   --text-muted: var(--slate);
   --accent: var(--teal);
   --accent-strong: var(--blue);
+}
+
+/* COLOR PALETTE - TEMA OSCURO */
+.theme-dark {
+  /* Mismos colores base... */
+  --navy: #0A1A2F;
+  --blue: #3A8DFF;
+  --teal: #4CC9A6;
+  --offwhite: #F7F9FC;
+  --gray-light: #E3E8EF;
+  --charcoal: #1E1E1E;
+  --slate: #5A6A7A;
+
+  /* ...pero SEMÁNTICOS INVERTIDOS */
+  --bg-main: #0A1A2F;              /* ← OSCURO: fondo azul marino */
+  --bg-card: #1e293b;
+  --text-main: var(--offwhite);    /* ← OSCURO: texto blanco */
+  --text-muted: #94a3b8;
+  --accent: var(--teal);
+  --accent-strong: var(--blue);
+}
+
+/* TOKENS COMPARTIDOS (para ambos temas) */
+:root, .theme-dark {
+  --motion-fade-duration: 0.8s;
+  --motion-slide-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.4, 0.0, 0.2, 1);
 
   /* SPACING SCALE (Tailwind-style) */
   --space-1: 0.25rem;
