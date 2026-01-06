@@ -22,8 +22,8 @@ title: Projects
         {% if project.technologies %}
         <div class="project-tags">
           {% for tech in project.technologies %}
-          <span class="tag">{{ tech }}</span>
-          {% endfor %}
+          <span class="tag">{{
+          {% endfor %} tech }}</span>
         </div>
         {% endif %}
         
