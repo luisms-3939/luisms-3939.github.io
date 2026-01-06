@@ -1,7 +1,6 @@
 ---
 title: Google Data Analytics Certificate
 issuer: Google / Coursera
-date: 2024
 layout: certification
 ---
 
