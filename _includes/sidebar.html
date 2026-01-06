@@ -1,19 +1,42 @@
-<!-- _includes/sidebar.html -->
 <aside class="sidebar">
-  <!-- your sidebar HTML from Step A -->
-<nav class="sidebar-section">
-  <h2>Navigation</h2>
-  <ul class="contact-list">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/skills">Skills</a></li>
-    <li><a href="/certifications">Certifications</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-</nav>
+  <div class="profile-section">
+    <!-- Tu foto de perfil -->
+    <img src="/assets/img/profile.jpg" alt="Luis Modesto" class="profile-image">
+    <h1>Luis Modesto</h1>
+    <p class="title">Data Analyst</p>
+    <p class="tagline">Transforming data into actionable insights</p>
+  </div>
 
+  <nav class="sidebar-section">
+    <h2>Navigation</h2>
+    <ul class="contact-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/skills">Skills</a></li>
+      <li><a href="/certifications">Certifications</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Skills Section (si la tienes) -->
+  <div class="sidebar-section">
+    <h2>Top Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item-sidebar">
+        <div class="skill-name-sidebar">
+          <span>Python</span>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" data-width="90%"></div>
+        </div>
+      </div>
+      <!-- Agrega más skills según necesites -->
+    </div>
+  </div>
+
+  <!-- Theme Toggle DEBE estar DENTRO del sidebar -->
+  <button class="theme-toggle-btn" onclick="toggleTheme()">
+    Theme
+  </button>
 </aside>
-
-<button class="theme-toggle-btn" onclick="toggleTheme()">
-  🌙 Theme
-</button>
