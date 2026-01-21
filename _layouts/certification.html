@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<div class="cert-card">
+  
+  <!-- Back Button -->
+  <a href="/certifications" class="timeline-btn timeline-btn-secondary" style="margin-bottom: 2rem; display: inline-flex;">
+    ← Back to Certifications
+  </a>
+
+  <!-- Title with Visual Badge -->
+  <h1 class="cert-title">
+    {{ page.title }}
+  </h1>
+
+  <!-- Completed Badge with Animation -->
+  <div class="cert-badge-visual">
+    Completed {{ page.date | date: "%B %Y" }}
+  </div>
+
+  <!-- Certificate Image with Hover Effect -->
+  {% if page.certificate_image %}
+  <div class="cert-image">
+    <img src="{{ page.certificate_image }}" alt="Certificate for {{ page.title }}" loading="lazy">
+  </div>
+  {% endif %}
+
+  <!-- Content with Enhanced Styling -->
+  <div class="cert-content">
+    {{ content }}
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="timeline-cert-actions" style="margin-top: 2rem;">
+    {% if page.certificate_url and page.certificate_url != '#' %}
+    <a href="{{ page.certificate_url }}" target="_blank" class="timeline-btn timeline-btn-primary">
+      📜 View Certificate
+    </a>
+    {% endif %}
+    
+    {% if page.verification_url %}
+    <a href="{{ page.verification_url }}" target="_blank" class="timeline-btn timeline-btn-secondary">
+      ✓ Verify
+    </a>
+    {% endif %}
+    
+    {% if page.course_url %}
+    <a href="{{ page.course_url }}" target="_blank" class="timeline-btn timeline-btn-secondary">
+      🔗 Course Info
+    </a>
+    {% endif %}
+  </div>
+
+  <!-- Share Section -->
+  <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--slate);">
+    <p style="color: var(--text-muted); text-align: center;">
+      <strong>Share this achievement:</strong>
+      <br>
+      <span style="display: inline-flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; justify-content: center;">
+        <a href="https://twitter.com/intent/tweet?text=I%20completed%20{{ page.title | uri_escape }}!&url={{ page.url | absolute_url }}" 
+           target="_blank" 
+           class="timeline-btn timeline-btn-secondary"
+           style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">
+          🐦 Twitter
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}" 
+           target="_blank" 
+           class="timeline-btn timeline-btn-secondary"
+           style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">
+          💼 LinkedIn
+        </a>
+      </span>
+    </p>
+  </div>
+
+</div>
+
+<!-- Related Certifications -->
+<div class="content-section" style="margin-top: 3rem;">
+  <h3 style="color: var(--accent); margin-bottom: 1.5rem;">Other Certifications</h3>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+    {% for cert in site.certifications limit:3 %}
+      {% if cert.url != page.url %}
+      <a href="{{ cert.url }}" 
+         style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--slate); text-decoration: none; transition: all 0.3s ease;"
+         onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-hover)';"
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+        <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1rem;">
+          {{ cert.title }}
+        </h4>
+        <p style="color: var(--accent); font-size: 0.85rem;">
+          {{ cert.date | date: "%B %Y" }}
+        </p>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
