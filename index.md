@@ -44,7 +44,7 @@ title: Home
   <div class="stat-item">
     <span class="stat-icon">
       <svg width="48" height="48" viewBox="0 0 20 20">
-        <g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#3A8DFF" d="M7 2.75a.75.75 0 0 1 .75.75v3.575l2.136 1.282a.75.75 0 1 1-.772 1.286l-2.5-1.5A.75.75 0 0 1 6.25 7.5v-4A.75.75 0 0 1 7 2.75"/><path fill="#4CC9A6" d="M1.5 7a5.5 5.5 0 0 1 9.82-3.405l-.966.965a.5.5 0 0 0 .353.854H13.5a.5.5 0 0 0 .5-.5V2.12a.5.5 0 0 0-.854-.354l-.76.761a7 7 0 1 0 1.427 6.086a.75.75 0 0 0-1.46-.344A5.5 5.5 0 0 1 1.5 7"/></g></svg>
+        <i class="fa-regular fa-clock" style="color: #4cc2a6;"></i></svg>
     </span>
     <span class="stat-number">500+</span>
     <span class="stat-label">Hours Learning</span>
