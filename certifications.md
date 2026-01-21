@@ -61,12 +61,12 @@ title: Certifications
       <div class="timeline-content">
         <div class="timeline-cert-header">
           <div class="timeline-cert-icon">
-            {% if cert.title contains 'Data Science' %}<iconify-icon icon="fluent-color:chart-multiple-16" width="48"></iconify-icon>
-            {% elsif cert.title contains 'Data Analytics' %}📈
-            {% elsif cert.title contains 'UX' or cert.title contains 'Design' %}🎨
-            {% elsif cert.title contains 'Project Management' %}📋
-            {% elsif cert.title contains 'IT Support' %}💻
-            {% elsif cert.title contains 'Automation' %}🤖
+            {% if cert.title contains 'Data Science' %}<iconify-icon icon="stash:chart-pie-duotone" width="48" style="color:#0a1a2f"></iconify-icon>
+            {% elsif cert.title contains 'Data Analytics' %}<iconify-icon icon="noto-v1:bar-chart" width="48" style="color:#4CC9A6"></iconify-icon>
+            {% elsif cert.title contains 'UX' or cert.title contains 'Design' %}<iconify-icon icon="ix:screen-pc-tower-settings" width="48" style="color:#4CC9A6"></iconify-icon>
+            {% elsif cert.title contains 'Project Management' %}<iconify-icon icon="icon-park-twotone:tree-list" width="48" style="color:#4CC9A6"></iconify-icon>
+            {% elsif cert.title contains 'IT Support' %}<iconify-icon icon="vscode-icons:folder-type-tools" width="48" style="color:#4CC9A6"></iconify-icon>
+            {% elsif cert.title contains 'Automation' %}<iconify-icon icon="el:cogs" width="48" style="color:#4CC9A6"></iconify-icon>
             {% else %}🎓{% endif %}
           </div>
           
@@ -133,12 +133,12 @@ title: Certifications
       
       <div class="certification-content">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">
-          {% if cert.title contains 'Data Science' %}📊
-          {% elsif cert.title contains 'Data Analytics' %}📈
-          {% elsif cert.title contains 'UX' or cert.title contains 'Design' %}🎨
-          {% elsif cert.title contains 'Project Management' %}📋
-          {% elsif cert.title contains 'IT Support' %}💻
-          {% elsif cert.title contains 'Automation' %}🤖
+          {% if cert.title contains 'Data Science' %}<iconify-icon icon="stash:chart-pie-duotone" width="48" style="color:#0a1a2f"></iconify-icon>
+          {% elsif cert.title contains 'Data Analytics' %}<iconify-icon icon="noto-v1:bar-chart" width="48" style="color:#4CC9A6"></iconify-icon>
+          {% elsif cert.title contains 'UX' or cert.title contains 'Design' %}<iconify-icon icon="ix:screen-pc-tower-settings" width="48" style="color:#4CC9A6"></iconify-icon>
+          {% elsif cert.title contains 'Project Management' %}<iconify-icon icon="icon-park-twotone:tree-list" width="48" style="color:#4CC9A6"></iconify-icon>
+          {% elsif cert.title contains 'IT Support' %}<iconify-icon icon="vscode-icons:folder-type-tools" width="48" style="color:#4CC9A6"></iconify-icon>
+          {% elsif cert.title contains 'Automation' %}<iconify-icon icon="el:cogs" width="48" style="color:#4CC9A6"></iconify-icon>
           {% else %}🎓{% endif %}
         </div>
         
