@@ -1,0 +1,567 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  
+  <!-- Back Button -->
+  <a href="/projects" class="back-btn">
+    ← Back to Projects
+  </a>
+
+  <!-- Project Header -->
+  <header class="project-detail-header">
+    <div class="project-detail-meta">
+      {% if page.category %}
+      <span class="project-category-badge-detail">{{ page.category }}</span>
+      {% endif %}
+      {% if page.date %}
+      <span class="project-date">{{ page.date | date: "%B %Y" }}</span>
+      {% endif %}
+    </div>
+    
+    <h1 class="project-detail-title">{{ page.title }}</h1>
+    
+    {% if page.description %}
+    <p class="project-detail-description">{{ page.description }}</p>
+    {% endif %}
+    
+    <!-- Project Links -->
+    <div class="project-detail-links">
+      {% if page.github %}
+      <a href="{{ page.github }}" target="_blank" class="project-detail-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        View on GitHub
+      </a>
+      {% endif %}
+      {% if page.demo %}
+      <a href="{{ page.demo }}" target="_blank" class="project-detail-btn project-detail-btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Live Demo
+      </a>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Project Image -->
+  {% if page.image %}
+  <div class="project-detail-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+  </div>
+  {% endif %}
+
+  <!-- Project Technologies -->
+  {% if page.technologies %}
+  <div class="project-technologies-section">
+    <h3>Technologies Used</h3>
+    <div class="tech-tags-detail">
+      {% for tech in page.technologies %}
+      <span class="tech-tag-detail">{{ tech }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Project Content -->
+  <div class="project-detail-content">
+    {{ content }}
+  </div>
+
+  <!-- Project Stats (optional) -->
+  {% if page.stats %}
+  <div class="project-stats-section">
+    <h3>Project Highlights</h3>
+    <div class="project-stats-grid">
+      {% for stat in page.stats %}
+      <div class="project-stat-card">
+        <div class="stat-value-detail">{{ stat.value }}</div>
+        <div class="stat-label-detail">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Key Features (if provided) -->
+  {% if page.features %}
+  <div class="project-features-section">
+    <h3>Key Features</h3>
+    <ul class="features-list">
+      {% for feature in page.features %}
+      <li class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">{{ feature }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <!-- Challenges & Solutions (if provided) -->
+  {% if page.challenges %}
+  <div class="challenges-section">
+    <h3>Challenges & Solutions</h3>
+    <div class="challenges-grid">
+      {% for challenge in page.challenges %}
+      <div class="challenge-card">
+        <h4>{{ challenge.title }}</h4>
+        <p><strong>Challenge:</strong> {{ challenge.problem }}</p>
+        <p><strong>Solution:</strong> {{ challenge.solution }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- More Projects -->
+  <div class="more-projects-section">
+    <h3>More Projects</h3>
+    <div class="more-projects-grid">
+      {% for project in site.projects limit:3 %}
+        {% if project.url != page.url %}
+        <a href="{{ project.url | relative_url }}" class="more-project-card">
+          {% if project.image %}
+          <div class="more-project-image">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" loading="lazy">
+          </div>
+          {% endif %}
+          <div class="more-project-info">
+            <h4>{{ project.title }}</h4>
+            <p>{{ project.description | truncatewords: 12 }}</p>
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</article>
+
+<style>
+/* Project Detail Container */
+.project-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-card);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateX(-5px);
+}
+
+/* Project Header */
+.project-detail-header {
+  margin-bottom: 3rem;
+}
+
+.project-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-category-badge-detail {
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-date {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.project-detail-title {
+  font-size: 2.5rem;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.project-detail-description {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Project Links */
+.project-detail-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-detail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.75rem;
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-detail-btn:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-detail-btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.project-detail-btn-primary:hover {
+  background: var(--accent-strong);
+}
+
+/* Project Image */
+.project-detail-image {
+  width: 100%;
+  margin-bottom: 3rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.project-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Technologies Section */
+.project-technologies-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate);
+}
+
+.project-technologies-section h3 {
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.tech-tags-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag-detail {
+  padding: 0.6rem 1.25rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  border: 2px solid var(--accent);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.tech-tag-detail:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Project Content */
+.project-detail-content {
+  color: var(--text-muted);
+  line-height: 1.9;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.project-detail-content h2 {
+  color: var(--text-main);
+  margin: 2.5rem 0 1.5rem;
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+.project-detail-content h3 {
+  color: var(--text-main);
+  margin: 2rem 0 1rem;
+  font-size: 1.4rem;
+}
+
+.project-detail-content p {
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-content ul,
+.project-detail-content ol {
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+}
+
+.project-detail-content li {
+  margin-bottom: 0.75rem;
+}
+
+.project-detail-content code {
+  background: var(--bg-card);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: var(--accent);
+}
+
+.project-detail-content pre {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* Project Stats */
+.project-stats-section {
+  margin-bottom: 3rem;
+}
+
+.project-stats-section h3 {
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.project-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-stat-card {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate);
+  text-align: center;
+}
+
+.stat-value-detail {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label-detail {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Features Section */
+.project-features-section {
+  margin-bottom: 3rem;
+}
+
+.project-features-section h3 {
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent);
+}
+
+.feature-icon {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.feature-text {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Challenges Section */
+.challenges-section {
+  margin-bottom: 3rem;
+}
+
+.challenges-section h3 {
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.challenges-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.challenge-card {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate);
+}
+
+.challenge-card h4 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.challenge-card p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.challenge-card strong {
+  color: var(--text-main);
+}
+
+/* More Projects */
+.more-projects-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid var(--slate);
+}
+
+.more-projects-section h3 {
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+
+.more-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.more-project-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--slate);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.more-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent);
+}
+
+.more-project-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.more-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.more-project-card:hover .more-project-image img {
+  transform: scale(1.1);
+}
+
+.more-project-info {
+  padding: 1.5rem;
+}
+
+.more-project-info h4 {
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.more-project-info p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-detail-title {
+    font-size: 2rem;
+  }
+  
+  .project-detail-description {
+    font-size: 1.1rem;
+  }
+  
+  .project-detail-links {
+    flex-direction: column;
+  }
+  
+  .project-detail-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .project-stats-grid,
+  .more-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
