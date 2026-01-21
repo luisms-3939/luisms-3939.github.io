@@ -13,7 +13,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="emojione:bar-chart" width="48" style=""></iconify-icon>
+        <iconify-icon icon="emojione:bar-chart" width="40" style=""></iconify-icon>
       </span>
       Data Analysis & Programming
     </h3>
@@ -27,7 +27,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="devicon:python" width="48"></iconify-icon>
+            <iconify-icon icon="devicon:python" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">90%</span>
           </div>
@@ -44,7 +44,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="devicon:azuresqldatabase" width="48"></iconify-icon>
+            <iconify-icon icon="devicon:azuresqldatabase" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">85%</span>
           </div>
@@ -61,7 +61,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="material-icon-theme:r" width="48"></iconify-icon>
+            <iconify-icon icon="material-icon-theme:r" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">75%</span>
           </div>
@@ -78,7 +78,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="fluent:brain-circuit-28-regular" width="48"></iconify-icon>
+            <iconify-icon icon="fluent:brain-circuit-28-regular" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">70%</span>
           </div>
@@ -93,7 +93,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="flat-color-icons:area-chart" width="48"></iconify-icon>
+        <iconify-icon icon="flat-color-icons:area-chart" width="40"></iconify-icon>
       </span>
       Data Visualization
     </h3>
@@ -107,7 +107,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="logos:tableau-icon" width="48"></iconify-icon>
+            <iconify-icon icon="logos:tableau-icon" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">85%</span>
           </div>
@@ -124,7 +124,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="devicon:plotly" width="48"></iconify-icon>
+            <iconify-icon icon="devicon:plotly" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">80%</span>
           </div>
@@ -141,7 +141,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="devicon:matplotlib" width="48"></iconify-icon>
+            <iconify-icon icon="devicon:matplotlib" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">75%</span>
           </div>
@@ -156,7 +156,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="ix:screen-pc-tower-settings" width="48"></iconify-icon>
+        <iconify-icon icon="ix:screen-pc-tower-settings" width="40"></iconify-icon>
       </span>
       Design & UI/UX
     </h3>
@@ -170,7 +170,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="material-icon-theme:figma" width="48"></iconify-icon>
+            <iconify-icon icon="material-icon-theme:figma" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">85%</span>
           </div>
@@ -187,7 +187,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="la:codepen" width="48"></iconify-icon>
+            <iconify-icon icon="la:codepen" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">75%</span>
           </div>
@@ -204,7 +204,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="mdi:user-search" width="48"></iconify-icon>
+            <iconify-icon icon="mdi:user-search" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">80%</span>
           </div>
@@ -219,7 +219,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="noto:toolbox" width="48"></iconify-icon>
+        <iconify-icon icon="noto:toolbox" width="40"></iconify-icon>
       </span>
       Tools & Platforms
     </h3>
@@ -233,7 +233,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-             <iconify-icon icon="devicon:git" width="48"></iconify-icon>
+             <iconify-icon icon="devicon:git" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">85%</span>
           </div>
@@ -250,7 +250,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="logos:jupyter" width="48"></iconify-icon>
+            <iconify-icon icon="logos:jupyter" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">75%</span>
           </div>
@@ -267,7 +267,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-            <iconify-icon icon="vscode-icons:file-type-excel" width="48"></iconify-icon>
+            <iconify-icon icon="vscode-icons:file-type-excel" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">70%</span>
           </div>
@@ -284,7 +284,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="streamline:cloud-check-solid" width="48"></iconify-icon>
+              <iconify-icon icon="streamline:cloud-check-solid" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">65%</span>
           </div>
@@ -299,7 +299,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="vscode-icons:file-type-coveralls" width="48"></iconify-icon>
+        <iconify-icon icon="vscode-icons:file-type-coveralls" width="40"></iconify-icon>
       </span>
       Soft Skills
     </h3>
@@ -313,7 +313,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="emojione:speaking-head" width="48"></iconify-icon>
+              <iconify-icon icon="emojione:speaking-head" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">90%</span>
           </div>
@@ -330,7 +330,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="streamline-ultimate:workflow-teamwork-fistbump-2-bold" width="48"></iconify-icon>
+              <iconify-icon icon="streamline-ultimate:workflow-teamwork-fistbump-2-bold" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">85%</span>
           </div>
@@ -347,7 +347,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="streamline-freehand-color:plugin-jigsaw-puzzle" width="48"></iconify-icon>
+              <iconify-icon icon="streamline-freehand-color:plugin-jigsaw-puzzle" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">85%</span>
           </div>
@@ -364,7 +364,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="icon-park-twotone:tree-list" width="48"></iconify-icon>
+              <iconify-icon icon="icon-park-twotone:tree-list" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">80%</span>
           </div>
@@ -379,7 +379,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="noto-v1:input-latin-letters" width="48"></iconify-icon>
+        <iconify-icon icon="noto-v1:input-latin-letters" width="40"></iconify-icon>
       </span>
       Languages
     </h3>
@@ -393,7 +393,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="flagpack:pt" width="48"></iconify-icon>
+              <iconify-icon icon="flagpack:pt" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">Native</span>
           </div>
@@ -410,7 +410,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="flagpack:gb-ukm" width="48"></iconify-icon>
+              <iconify-icon icon="flagpack:gb-ukm" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">95%</span>
           </div>
@@ -427,7 +427,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="flagpack:es" width="48"></iconify-icon>
+              <iconify-icon icon="flagpack:es" width="40"></iconify-icon>
             </span>
             <span class="gauge-percentage">95%</span>
           </div>
