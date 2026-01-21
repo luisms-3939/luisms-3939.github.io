@@ -78,7 +78,7 @@ title: Home
     
     <div class="what-i-do-card">
       <div class="wid-icon">
-        <iconify-icon icon="arcticons:termux-api" width="48" style="color:#4CC9A6"></iconify-icon>
+        <iconify-icon icon="arcticons:termux-api" width="48" style="color:#f3f7fc"></iconify-icon>
           </div>
       <h3>UI/UX Design</h3>
       <p>Designing user-centered interfaces and experiences that are both functional and delightful to use.</p>
