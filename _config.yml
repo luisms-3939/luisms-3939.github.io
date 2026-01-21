@@ -1,0 +1,24 @@
+title: "Luis Modesto - Portfolio"
+baseurl: ""
+url: "https://luisms-3939.github.io"
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  certifications:
+    output: true
+    permalink: /certifications/:path/
+
+# NO uses 'theme' si no estás seguro de tenerlo
+# theme: minima
+incremental: true
+repository: luis-c2255/luis-c2255.github.io
+github:
+  token: ENV['JEKYLL_GITHUB_TOKEN']
+  is_project_page: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
