@@ -4,7 +4,7 @@ title: "Capstone Project - Google Data Analysis"
 description: "Cyclistic Bike-Share Analysis: From Casual Riders to Annual Members"
 date: 2025-11-16
 category: "data-analysis"
-image: "/assets/images/projects/BikeSharing.svg"
+image: "/assets/images/projects/bike_share/BikeSharing.svg"
 technologies:
   - Excel
   - BigQuery
