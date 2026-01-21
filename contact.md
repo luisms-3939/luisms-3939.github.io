@@ -25,7 +25,7 @@ title: Contact
     <!-- Email -->
     <a href="mailto:luiscsmodesto@outlook.com" class="contact-link-card">
       <div class="contact-icon">
-        <iconify-icon icon="ph:envelope-light" width="48"></iconify-icon>
+        <iconify-icon icon="ph:envelope-light" width="48" style="color:#ffffff"></iconify-icon>
       </div>
       <div class="contact-info">
         <h3>Email</h3>
@@ -49,7 +49,7 @@ title: Contact
     <!-- GitHub -->
     <a href="https://github.com/luis-c2255" target="_blank" class="contact-link-card">
       <div class="contact-icon">
-        <iconify-icon icon="formkit:github" style="color:#ffffff"></iconify-icon>
+        <iconify-icon icon="formkit:github" width="48" style="color:#ffffff"></iconify-icon>
       </div>
       <div class="contact-info">
         <h3>GitHub</h3>
