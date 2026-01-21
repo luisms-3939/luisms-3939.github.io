@@ -34,24 +34,21 @@ title: Home
   </div>
   <div class="stat-item">
     <span class="stat-icon">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="#4CC9A6"> 
-        <path d="m13 21l2-1l2 1v-7h-4m4-5V7l-2 1l-2-1v2l-2 1l2 1v2l2-1l2 1v-2l2-1m1-7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7v-2H4V5h16v10h-1v2h1a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-9 5H5V6h6m-2 5H5V9h4m2 5H5v-2h6Z"/></svg>
+    <iconify-icon icon="vscode-icons:file-type-allcontributors" width="48" style="color:#4CC9A6"></iconify-icon>
     </span>
     <span class="stat-number">{{ site.certifications.size }}</span>
     <span class="stat-label">Certifications</span>
   </div>
   <div class="stat-item">
     <span class="stat-icon">
-      <svg width="48" height="48" viewBox="0 0 20 20">
-        <g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#3A8DFF" d="M7 2.75a.75.75 0 0 1 .75.75v3.575l2.136 1.282a.75.75 0 1 1-.772 1.286l-2.5-1.5A.75.75 0 0 1 6.25 7.5v-4A.75.75 0 0 1 7 2.75"/><path fill="#4CC9A6" d="M1.5 7a5.5 5.5 0 0 1 9.82-3.405l-.966.965a.5.5 0 0 0 .353.854H13.5a.5.5 0 0 0 .5-.5V2.12a.5.5 0 0 0-.854-.354l-.76.761a7 7 0 1 0 1.427 6.086a.75.75 0 0 0-1.46-.344A5.5 5.5 0 0 1 1.5 7"/></g></svg>
+    <iconify-icon icon="streamline-sharp-color:reset-clock-flat" width="48" style="color:#4CC9A6"></iconify-icon>
     </span>
     <span class="stat-number">500+</span>
     <span class="stat-label">Hours Learning</span>
   </div>
   <div class="stat-item">
     <span class="stat-icon">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="#4CC9A6">
-      <path d="M17.504 7.501H7.5v10.003h10.003z"/><path fill="#4CC9A6" d="M21.505 5.5v-2h-2v-2h-2.001v2h-2v-2h-2.001v2h-2v-2H9.501v2h-2v-2H5.5v2h-2v2h-2v2.001h2v2h-2v2.001h2v2h-2v2.001h2v2h-2v2.001h2v2h2v2.001h2.001v-2h2v2h2.001v-2h2v2h2.001v-2h2v2h2.001v-2h2v-2h2.001v-2.001h-2v-2h2v-2.001h-2v-2h2V9.501h-2v-2h2V5.5zm-2 14.004H5.5V5.501h14.003z"/></svg>
+    <iconify-icon icon="fluent-emoji-flat:laptop" width="48" style="color:#4CC9A6"></iconify-icon>
     </span>
     <span class="stat-number">10+</span>
     <span class="stat-label">Technologies</span>
