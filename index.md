@@ -62,8 +62,7 @@ title: Home
   <div class="what-i-do-grid">
     <div class="what-i-do-card">
       <div class="wid-icon">
-        <svg width="48" height="48" viewBox="0 0 24 24">
-          <g fill="none" stroke="#4CC9A6" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m17 9l-3.044 4.566a1 1 0 0 1-1.727-.107l-.458-.918a1 1 0 0 0-1.727-.107L7 17"/><rect width="18" height="18" x="3" y="3" rx="2"/></g></svg>
+      <iconify-icon icon="emojione:bar-chart" width="48" style="color:#4CC9A6"></iconify-icon>
       </div>
       <h3>Data Analysis</h3>
       <p>Extracting insights from complex datasets using Python, SQL, and statistical methods to drive business decisions.</p>
@@ -71,8 +70,7 @@ title: Home
     
     <div class="what-i-do-card">
       <div class="wid-icon">
-        <svg width="48" height="48" viewBox="0 0 48 48" path fill="#4CC9A6" fill-rule="evenodd">
-          <path d="M7 42a1 1 0 0 1-1-1V7h2v33h3V25a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v15h2V21a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v19h2V13a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v27h2v2zm30-2V14h-4v26zm-10 0h-4V22h4zm-10 0V26h-4v14z" clip-rule="evenodd"/></svg>
+        <iconify-icon icon="noto-v1:chart-increasing" width="48" style="color:#4CC9A6"></iconify-icon>
           </div>
       <h3>Data Visualization</h3>
       <p>Creating compelling visual stories with Tableau, Power BI, and custom dashboards that make data accessible to everyone.</p>
@@ -80,8 +78,7 @@ title: Home
     
     <div class="what-i-do-card">
       <div class="wid-icon">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="#4CC9A6">
-          <path d="M21 16V4H3v12zm0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7v2h2v2H8v-2h2v-2H3a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2zM5 6h9v5H5zm10 0h4v2h-4zm4 3v5h-4V9zM5 12h4v2H5zm5 0h4v2h-4z"/></svg>
+        <iconify-icon icon="arcticons:termux-api" width="48" style="color:#4CC9A6"></iconify-icon>
           </div>
       <h3>UI/UX Design</h3>
       <p>Designing user-centered interfaces and experiences that are both functional and delightful to use.</p>
