@@ -16,7 +16,7 @@ title: Projects
   <!-- Stats Overview -->
   <div class="projects-stats">
     <div class="project-stat-item">
-      <span class="stat-icon">💼</span>
+      <iconify-icon icon="fxemoji:briefcase" width="48"></iconify-icon>
       <span class="stat-value">{{ site.projects.size }}</span>
       <span class="stat-label">Total Projects</span>
     </div>
