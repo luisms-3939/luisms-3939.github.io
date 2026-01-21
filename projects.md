@@ -21,12 +21,12 @@ title: Projects
       <span class="stat-label">Total Projects</span>
     </div>
     <div class="project-stat-item">
-      <span class="stat-icon">🛠️</span>
+      <iconify-icon icon="fluent-emoji-flat:laptop" width="48"></iconify-icon>
       <span class="stat-value">10+</span>
       <span class="stat-label">Technologies Used</span>
     </div>
     <div class="project-stat-item">
-      <span class="stat-icon">📊</span>
+      <iconify-icon icon="noto:globe-showing-asia-australia" width="48"></iconify-icon>
       <span class="stat-value">100%</span>
       <span class="stat-label">Real-World Impact</span>
     </div>
