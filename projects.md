@@ -46,9 +46,6 @@ title: Projects
     <button class="filter-btn" onclick="filterProjects('automation')">
       Automation
     </button>
-    <button class="filter-btn" onclick="filterProjects('web')">
-      Web Development
-    </button>
   </div>
 
   <!-- Projects Grid -->
