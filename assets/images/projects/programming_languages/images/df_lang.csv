@@ -1,0 +1,101 @@
+language,founder/creator,year,primary_paradigm,typing_discipline,origin_type,country,primary_use_case,influenced_by,age,file_extensions,popularity
+Python,Guido van Rossum,1991,Object-oriented,Dynamic; Strong,Individual,Netherlands,General-purpose; Data science,ABC; Modula-3; C,35,.py,1
+JavaScript,Brendan Eich,1995,Functional,Dynamic; Weak,Corporate,United States,Web development,Scheme; Java; Self,31,.js,6
+Java,James Gosling,1995,Object-oriented,Static; Strong,Corporate,United States,Enterprise; Backend,C++; Smalltalk,31,.java,3
+C,Dennis Ritchie,1972,Procedural,Static; Weak,Corporate,United States,Systems programming,B; BCPL,54,.c,2
+C++,Bjarne Stroustrup,1985,Object-oriented,Static; Strong,Corporate,United States,Systems programming,C; Simula,41,.cpp,4
+C#,Microsoft (Anders Hejlsberg lead),2000,Object-oriented,Static; Strong,Corporate,United States,Enterprise; Backend,Java; C++; Delphi,26,.cs,5
+Go,"Robert Griesemer, Rob Pike, Ken Thompson",2009,Procedural,Static; Strong,Corporate,United States,Cloud; Systems,C; Pascal; CSP,17,.go,16
+Rust,Graydon Hoare (Mozilla),2010,Functional,Static; Strong,Corporate,United States,Systems programming,C++; ML; Haskell,16,.rs,13
+TypeScript,Microsoft (Anders Hejlsberg),2012,Object-oriented,Static; Strong,Corporate,United States,Web development,JavaScript; C#,14,.ts,32
+Swift,Apple (Chris Lattner lead),2014,Object-oriented,Static; Strong,Corporate,United States,Mobile development,Objective-C; Rust; Haskell,12,.swift,22
+Kotlin,JetBrains,2011,Object-oriented,Static; Strong,Corporate,Russian Federation,Mobile; Backend,Java; Scala,15,.kt,20
+PHP,Rasmus Lerdorf,1995,Object-oriented,Dynamic; Weak,Individual,Canada,Web development,C; Perl,31,.php,15
+Ruby,YUnited Kingdomihiro Matsumoto (Matz),1995,Object-oriented,Dynamic; Strong,Individual,Japan,Web development,Perl; Smalltalk; Lisp,31,.rb,27
+Perl,Larry Wall,1987,Object-oriented,Dynamic; Weak,Individual,United States,Text processing,Unix shell; C,39,.pl,11
+R,Ross Ihaka & Robert Gentleman,1993,Functional,Dynamic; Strong,Academic,New Zealand,Data science,S; Scheme,33,.r,10
+MATLAB,Cleve Moler,1984,Procedural,Dynamic; Weak,Academic,United States,Numerical computing; Engineering,Fortran; Lisp,42,.m,14
+SQL,Donald D. Chamberlin & Raymond F. Boyce,1974,Declarative,Static (schema-based),Corporate,United States,Databases; Query languages,Relational algebra; Relational calculus,52,.sql,8
+HTML/CSS,Tim Berners-Lee (HTML),1990,Declarative,None (markup),Academic,Switzerland,Web structure & styling,SGML,36,".html, .css",33
+Dart,Google (Lars Bak & Kasper Lund),2011,Object‑oriented,"Static, Strong",Corporate,United States,Web; Mobile (Flutter),"JavaScript, Java, C#",15,.dart,30
+Scala,Martin Odersky,2004,Object-oriented,Static; Strong,Academic,Switzerland,Big data; Backend,Java; Haskell,22,.scala,0
+Lua,"Roberto IerUnited Stateslimschy, Waldemar Celes, Luiz Henrique de Figueiredo",1993,Procedural,Dynamic; Weak,Academic,Brazil,Game scripting,Scheme; SNOBOL,33,.lua,36
+Groovy,James Strachan,2003,Object‑oriented,Dynamic; Optional static,Community,United States,JVM scripting; Build tools,"Java;, Python; Ruby",23,.groovy,39
+Haskell,Simon Peyton Jones et al.,1990,Functional,Static; Strong,Academic,United Kingdom,Academic; Functional programming,Miranda; ML,36,.hs,43
+Elixir,José Valim,2011,Functional,Dynamic; Strong,Individual,Brazil,Web; Distributed systems,Erlang; Ruby,15,.ex,12
+Erlang,Joe Armstrong,1986,Functional,Dynamic; Strong,Corporate,Sweden,Telecom; Distributed systems,Prolog,40,.erl,21
+Fortran,John Backus (IBM),1957,Procedural,Static; Strong,Corporate,United States,Scientific computing,None,69,".f90, .f95, .f03 ",19
+COBOL,Grace Hopper & others,1959,Procedural,Static; Strong,Corporate,United States,Business systems; Finance,FLOW-MATIC,67,.cob,28
+Assembly,Various (machine dependent),1949,Procedural,None ,Corporate,United States,Systems; Embedded,Machine code,77,.asm,29
+Julia,"Jeff Bezanson, Stefan Karpinski, Viral Shah",2012,Functional,Dynamic; Strong,Academic,United States,Scientific computing,Lisp; Matlab; Python,14,.jl,18
+Objective-C,Brad Cox & Tom Love,1984,Object-oriented,Static; Dynamic messaging,Corporate,United States,macOS/iOS development,C; Smalltalk,42,.m,7
+Ada,Jean Ichbiah (CII Honeywell Bull),1983,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,43,Unknown,0
+Visual Basic,Microsoft,1991,Object-oriented,Unknown,Unknown,Unknown,Unknown,Unknown,35,Unknown,0
+VB.NET,Microsoft,2002,Object-oriented,Static; Strong,Corporate,United States,Enterprise; Desktop apps,Visual Basic; C#,24,.vb,9
+F#,Microsoft (Don Syme),2005,Object-oriented,Static; Strong,Corporate,United States,Finance; Data analysis,OCaml; C#,21,.fs,0
+Delphi/Object Pascal,Anders Hejlsberg,1995,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,31,Unknown,0
+Racket,Matthew Flatt et al.,1995,Functional,Dynamic; Strong,Academic,United States,Education; Language research,Scheme,31,.rkt,31
+Scheme,Guy L. Steele & Gerald Jay Sussman,1975,Functional,Dynamic; Strong,Academic,United States,Research; Education,Lisp,51,.scm,23
+Lisp,John McCarthy,1958,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,68,Unknown,0
+Prolog,Alain Colmerauer,1972,Logic,Unknown,Unknown,Unknown,Unknown,Unknown,54,Unknown,0
+OCaml,INRIA (Xavier Leroy et al.),1996,Functional,Static; Strong,Academic,France,Compilers; Research,Caml; ML,30,.ml,0
+Crystal,YUnited Kingdomi Nishijima,2014,Object‑oriented,Static; Strong,Community,Argentina,Web; Systems,Ruby; C,12,.cr,42
+Nim,Andreas Rumpf,2008,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,18,Unknown,0
+Zig,Andrew Kelley,2016,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,10,Unknown,0
+V,Alexander Medvednikov,2019,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,7,Unknown,0
+Carbon,Google (Chandler Carruth),2022,Multi‑paradigm,Static; Strong,Corporate,United States,C++ successor; Systems,C++; Rust,4,.carbon,41
+Mojo,Modular (Chris Lattner & team),2023,Multi‑paradigm,Static; Strong,Corporate,United States,AI; High‑performance computing,Python; Rust,3,.mojo,45
+Solidity,Gavin Wood,2014,Contract-oriented,Static; Strong,Individual,United Kingdom,Blockchain,JavaScript; C++; Python,12,.sol,37
+Apex,Salesforce,2007,Object‑oriented,Static; Strong,Corporate,United States,CRM; Enterprise automation,Java,19,.cls,17
+ABAP,SAP,1983,Procedural,Static; Strong,Corporate,Germany,ERP systems,COBOL,43,.abap,44
+Scratch,MIT Media Lab (Mitchel Resnick),2007,Visual,None,Academic,United States,Education  ,Logo,19,.sb3,48
+PowerShell,Microsoft (Jeffrey Snover),2006,Scripting,Unknown,Unknown,Unknown,Unknown,Unknown,20,Unknown,0
+Bash/Shell,Brian Fox (for Bash),1989,Scripting,Unknown,Unknown,Unknown,Unknown,Unknown,37,Unknown,0
+Power Query (M),Microsoft,2010,Declarative,Unknown,Unknown,Unknown,Unknown,Unknown,16,Unknown,0
+VHDL,DARPA/IBM/others,1987,Hardware Description,Unknown,Unknown,Unknown,Unknown,Unknown,39,Unknown,0
+Verilog,Phil Moorby,1984,Hardware Description,Static,Corporate,United States,Digital circuits,C,42,.v ,46
+SystemVerilog,Co-design Automation (later Synopsys),2002,Hardware Description,Static,Corporate,United States,Chip design,Verilog; C++,24,.sv,25
+LabVIEW,National Instruments,1986,Visual,Unknown,Unknown,Unknown,Unknown,Unknown,40,Unknown,0
+SAS,SAS Institute,1976,Statistical,Unknown,Unknown,Unknown,Unknown,Unknown,50,Unknown,0
+Stata,StataCorp,1985,Statistical,Unknown,Unknown,Unknown,Unknown,Unknown,41,Unknown,0
+D,Walter Bright,2001,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,25,Unknown,0
+Pascal,Niklaus Wirth,1970,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,56,Unknown,0
+Simula,Ole-Johan Dahl & Kristen Nygaard,1967,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,59,Unknown,0
+Smalltalk,"Alan Kay, Dan Ingalls, Adele Goldberg",1972,Object-oriented,Unknown,Unknown,Unknown,Unknown,Unknown,54,Unknown,0
+Logo,Seymour Papert et al.,1967,Visual,Unknown,Unknown,Unknown,Unknown,Unknown,59,Unknown,0
+Forth,Charles H. Moore,1970,Procedural,Dynamic,Individual,United States,Embedded; Robotics,None,56,.fs,49
+APL,Kenneth E. Iverson,1962,Array,Dynamic,Academic,Canada,Math; Finance,Iverson notation,64,.apl,34
+RPG,IBM,1959,Declarative,Unknown,Unknown,Unknown,Unknown,Unknown,67,Unknown,0
+PL/SQL,Oracle,1991,Procedural,Static,Corporate,United States,Databases  ,Ada; SQL,35,.pls,26
+T-SQL,Microsoft/Sybase,1989,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,37,Unknown,0
+Reason,Jordan Walke,2016,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,10,Unknown,0
+ReScript,Hongbo Zhang,2019,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,7,Unknown,0
+PureScript,Phil Freeman,2013,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,13,Unknown,0
+Elm,Evan Czaplicki,2012,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,14,Unknown,0
+Haxe,Nicolas Cannasse,2005,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,21,Unknown,0
+Vala,Jürg Billeter & Raffaele Sandrini,2006,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,20,Unknown,0
+Clojure,Rich Hickey,2007,Functional,Dynamic; Strong,Individual,United States,Backend; Functional programming,Lisp; Haskell,19,.clj,0
+Common Lisp,Scott Fahlman et al.,1984,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,42,Unknown,0
+Ada 2012,Ada community,2012,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,14,Unknown,0
+CoffeeScript,Jeremy Ashkenas,2010,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,16,Unknown,0
+LiveScript,Community fork,2014,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,12,Unknown,0
+GDScript,Juan Linietsky & Ariel Manzur (Godot),2014,Scripting,Unknown,Unknown,Unknown,Unknown,Unknown,12,Unknown,0
+Blueprints,Unreal Engine (visual),2014,Visual,None,Corporate,United States,Game development,UnrealScript,12,.uasset,35
+CFML,Allaire brothers (ColdFusion),1995,Scripting,Unknown,Unknown,Unknown,Unknown,Unknown,31,Unknown,0
+FoxPro,Fox Software,1984,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,42,Unknown,0
+Clarion,Bruce Barrington,1986,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,40,Unknown,0
+MUMPS,Massachusetts General Hospital,1966,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,60,Unknown,0
+PostScript,John Warnock & Charles Geschke,1982,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,44,Unknown,0
+Raku,Larry Wall,2000,Multi-paradigm,Unknown,Unknown,Unknown,Unknown,Unknown,26,Unknown,0
+Hack,Facebook,2014,Object-oriented,Unknown,Unknown,Unknown,Unknown,Unknown,12,Unknown,0
+Q#,Microsoft,2018,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,8,Unknown,0
+Ball,Microsoft Research,2019,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,7,Unknown,0
+Move,Meta (Diem project),2019,Declarative,Unknown,Unknown,Unknown,Unknown,Unknown,7,Unknown,0
+Cuneiform,Jörgen Gustavsson,2015,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,11,Unknown,0
+Red,Nenad Rakočević,2011,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,15,Unknown,0
+Rebol,Carl Sassenrath,1998,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,28,Unknown,0
+Io,Steve Dekorte,2002,Object-oriented,Unknown,Unknown,Unknown,Unknown,Unknown,24,Unknown,0
+Pony,Sylvan Clebsch & others,2013,Object-oriented,Unknown,Unknown,Unknown,Unknown,Unknown,13,Unknown,0
+Gleam,Louis Pilfold,2016,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,10,Unknown,0
+Odin,Bill Holden,2019,Procedural,Unknown,Unknown,Unknown,Unknown,Unknown,7,Unknown,0
+Lobster,Mike Acton,2010,Functional,Unknown,Unknown,Unknown,Unknown,Unknown,16,Unknown,0
