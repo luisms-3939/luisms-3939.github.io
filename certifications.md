@@ -61,7 +61,7 @@ title: Certifications
       <div class="timeline-content">
         <div class="timeline-cert-header">
           <div class="timeline-cert-icon">
-            {% if cert.title contains 'Data Science' %}📊
+            {% if cert.title contains 'Data Science' %}<iconify-icon icon="fluent-color:chart-multiple-16" width="48"></iconify-icon>
             {% elsif cert.title contains 'Data Analytics' %}📈
             {% elsif cert.title contains 'UX' or cert.title contains 'Design' %}🎨
             {% elsif cert.title contains 'Project Management' %}📋
