@@ -4,7 +4,7 @@ title: "Capstone Project IBM - Data Science"
 description: "Predicting SpaceX Launch Prices & First Stage Reuse"
 date: 2025-12-26
 category: "data-analysis"
-image: "/assets/images/projects/SpaceX.svg"
+image: "/assets/images/projects/spacex/SpaceX.svg"
 technologies:
   - Python
   - Folium
@@ -42,16 +42,20 @@ SpaceY plans to enter the commercial launch market and compete with SpaceX’s F
 
 ## Data Collection
 ### SpaceX API
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/SpaceX_API.svg?raw=true" alt="Chart" width="65%" height="65%">
 
 ### Web Scrapping
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/web_scrapping.svg?raw=true" alt="Chart" width="65%" height="65%">
 
 ## Data Wrangling
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/data_wrangling.svg?raw=true" alt="Chart" width="65%" height="65%">
 
 ## Exploratory Data Analysis Approach
 To understand patterns in launch behavior, performance, and mission characteristics, performed a Structured EDA workflow:
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/eda_approach.svg?raw=true" alt="Chart" width="65%" height="65%">
 
 **Purpose**
@@ -60,6 +64,7 @@ Identify relationships, anomalies, and operational patterns that inform both SQL
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/graph.svg?raw=true" alt="Chart" width="65%" height="65%">
 
 ## SQL
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/sql.svg?raw=true" alt="Chart" width="65%" height="65%">
 
 **Output**
@@ -89,9 +94,11 @@ Using Folium, created interactive maps to visualize:
   - CCAFS SLC-40 (Cape Canaveral Space Force Station, Space Launch Complex 40, Florida, United States)
   - KSC LC-39A (Kennedy Space Center Launch Complex 39A, Florida, United States)
   - VAFB SLC-4E (Vandenberg AFB Space Launch Complex 4E, Lompoc, United States)
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/foli.svg?raw=true" alt="Map" width="65%" height="65%">
 
 2. **Success vs Failure Markers**
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/folio.svg?raw=true" alt="Map" width="65%" height="65%">
 
 **Dashboard**
@@ -101,6 +108,7 @@ Check the dashboard [here](https://lmode2255.pythonanywhere.com/)
 
 ## Predictive Analysis
 **Machine Learning Overview**
+
 <img src="https://github.com/luis-c2255/luis-c2255.github.io/blob/changes/assets/images/projects/ml%20implement.svg?raw=true" alt="Photo" width="65%" height="65%">
 
 **Model Comparison (GridSearchCV-tuned)**
