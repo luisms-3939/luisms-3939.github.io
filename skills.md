@@ -312,7 +312,7 @@ title: Skills
           </svg>
           <div class="gauge-center">
             <span class="gauge-icon">
-              <iconify-icon icon="emojione:speaking-head" width="40" style="color:#f7f9fc"></iconify-icon>
+              <iconify-icon icon="emojione-monotone:speaking-head" width="40" style="color:#f7f9fc"></iconify-icon>
             </span>
             <span class="gauge-percentage">90%</span>
           </div>
