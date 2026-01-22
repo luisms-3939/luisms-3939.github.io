@@ -78,7 +78,7 @@ title: About Me
       <div class="timeline-content">
         <div class="timeline-year">2022 - Present</div>
         <h3>Customer Service & Back Office Specialist | H&M Group</h3>
-        <p>**Operational Efficiency:** Developed custom workload templates to visualize team tasks, enabling data-informed prioritization and improved workflow management.</p>
+        <p><strong>Operational Efficiency:</strong> Developed custom workload templates to visualize team tasks, enabling data-informed prioritization and improved workflow management.</p>
         <p> **Technical Documentation**: Authored a comprehensive "IT User Guide" for staff, streamlining the resolution of customer account, app, and membership issues.</p>
         <p>**Data Management**: Managed back-office operations including accurate data entry, order processing, and record maintenance to ensure operational integrity.</p>
         <p>**Stakeholder Collaboration:** Partnered with cross-functional departments to resolve complex issues and maintain a seamless customer experience.</p>
