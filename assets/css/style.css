@@ -483,7 +483,7 @@ body {
 }
 
 .cert-badge-visual::before {
-  content: <wa-icon name="trophy" style="font-size: 0.625em; color: #f7f9fc;"></wa-icon>;
+  content: <iconify-icon icon="fa7-solid:trophy" width="24" style="color:#f7f9fc"></iconify-icon>;
   font-size: var(--text-xl);
 }
 
