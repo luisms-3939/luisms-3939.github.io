@@ -156,7 +156,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="ix:screen-pc-tower-settings" width="40"></iconify-icon>
+        <iconify-icon icon="vscode-icons:file-type-tmux" width="48"></iconify-icon>
       </span>
       Design & UI/UX
     </h3>
@@ -378,7 +378,7 @@ title: Skills
   <div class="skills-category">
     <h3 class="category-title">
       <span class="category-icon">
-        <iconify-icon icon="noto-v1:input-latin-letters" width="40"></iconify-icon>
+        <iconify-icon icon="emojione-v1:input-latin-letters" width="48"></iconify-icon>
       </span>
       Languages
     </h3>
