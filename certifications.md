@@ -112,7 +112,7 @@ title: Certifications
         <div class="timeline-cert-actions">
           <a href="{{ cert.url }}" class="timeline-btn timeline-btn-primary">View Details →</a>
           {% if cert.certificate_url and cert.certificate_url != '#' %}
-          <a href="{{ cert.certificate_url }}" target="_blank" class="timeline-btn timeline-btn-secondary"> <iconify-icon icon="game-icons:diploma" width="24" style="color:#f7f9fc"></iconify-icon> Cert</a>
+          <a href="{{ cert.certificate_url }}" target="_blank" class="timeline-btn timeline-btn-secondary"> <iconify-icon icon="fa7-solid:certificate" width="24" style="color:#f7f9fc"></iconify-icon> Cert</a>
           {% endif %}
         </div>
       </div>
