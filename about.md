@@ -41,7 +41,9 @@ title: About Me
   
   <div class="approach-grid">
     <div class="approach-card">
-      <div class="approach-icon"><iconify-icon icon="estreamline-cyber:business-target" width="48" style="color:#f7f9fc"></iconify-icon></div>
+      <div class="approach-icon">
+        <iconify-icon icon="streamline-cyber:business-target" width="48" style="color:#f7f9fc"></iconify-icon>
+      </div>
       <h3>Focus on Impact</h3>
       <p>I don't just deliver reports—I deliver insights that drive decisions. Every analysis starts with understanding the business question and ends with clear, actionable recommendations.</p>
     </div>
