@@ -42,28 +42,32 @@ title: About Me
   <div class="approach-grid">
     <div class="approach-card">
       <div class="approach-icon">
-        <iconify-icon icon="streamline-cyber:business-target" width="48" style="color:#f7f9fc"></iconify-icon>
+        <iconify-icon icon="mdi:lightbulb-on-90" width="48" style="color:#f7f9fc"></iconify-icon>
       </div>
-      <h3>Focus on Impact</h3>
-      <p>I don't just deliver reports—I deliver insights that drive decisions. Every analysis starts with understanding the business question and ends with clear, actionable recommendations.</p>
+      <h3>Business-Driven Analytics</h3>
+      <p>I focus on the "why" behind the data, ensuring every technical solution drives a measurable business outcome.</p>
     </div>
     
     <div class="approach-card">
-      <div class="approach-icon">🎨</div>
-      <h3>Design-Minded Analytics</h3>
-      <p>With a background in UX design, I create dashboards and visualizations that aren't just functional—they're intuitive and delightful to use.</p>
+      <div class="approach-icon">
+      <iconify-icon icon="mdi:clock-fast" width="48" style="color:#f7f9fc"></iconify-icon>
+      </div>
+      <h3>Rapid, Adaptive Learning</h3>
+      <p>My career shift reflects my adaptability. I take on steep learning curves with enthusiasm and approach technical challenges as problems waiting to be decoded.</p>
     </div>
     
     <div class="approach-card">
-      <div class="approach-icon">🔄</div>
-      <h3>Automation First</h3>
-      <p>I believe in working smart. By automating repetitive tasks and building scalable pipelines, I free up time to focus on analysis that truly matters.</p>
+      <div class="approach-icon">
+      <iconify-icon icon="stash:arrows-switch-solid" width="48" style="color:#f7f9fc"></iconify-icon>
+      </div>
+      <h3>Automation Mindset</h3>
+      <p>I build for efficiency. By automating the routine, I ensure my time is spent on high-value analysis rather than manual maintenance.</p>
     </div>
     
     <div class="approach-card">
       <div class="approach-icon">🤝</div>
-      <h3>Clear Communication</h3>
-      <p>Complex data doesn't have to be complicated. I translate technical findings into clear stories that anyone can understand and act upon.</p>
+      <h3>Data Interpreter</h3>
+      <p>I turn complex data into clear, actionable insights, bridging the gap between technical detail and confident decision‑making.</p>
     </div>
   </div>
 </div>
@@ -125,18 +129,18 @@ title: About Me
   
   <div class="philosophy-content">
     <div class="philosophy-item">
-      <h3>📊 Data is a Story</h3>
-      <p>Every dataset has a narrative. My job is to uncover it and present it in a way that resonates with the audience—whether that's executives, product teams, or end users.</p>
+      <h3><iconify-icon icon="healthicons:register-book-outline" width="48" style="color:#f7f9fc"></iconify-icon> Story-Driven Data</h3>
+      <p>I treat every dataset as a story waiting to be told. My goal is to uncover the underlying narrative and present it in a way that resonates with the audience’s specific goals and pain points.</p>
     </div>
     
     <div class="philosophy-item">
-      <h3>🔍 Question Everything</h3>
+      <h3><iconify-icon icon="oui:question-in-circle" width="48" style="color:#f7f9fc"></iconify-icon> Question Everything</h3>
       <p>Good analysis starts with good questions. I approach every project with curiosity, challenging assumptions and digging deeper to find the real insights beneath the surface.</p>
     </div>
     
     <div class="philosophy-item">
-      <h3>🚀 Build for Scale</h3>
-      <p>Whether it's a dashboard, a pipeline, or a report, I design solutions that can grow with your needs. Clean code, clear documentation, and maintainability are non-negotiable.</p>
+      <h3><iconify-icon icon="icon-park-twotone:six-circular-connection" width="48" style="color:#f7f9fc"></iconify-icon> Holistic View</h3>
+      <p>I look at how data points connect across different departments, ensuring that a solution for one team doesn't create a problem for another.</p>
     </div>
   </div>
 </div>
@@ -147,87 +151,22 @@ title: About Me
   
   <div class="work-style-grid">
     <div class="work-style-card">
-      <div class="ws-icon">🏠</div>
+      <div class="ws-icon"><iconify-icon icon="streamline-ultimate:meeting-remote" width="48" style="color:#f7f9fc"></iconify-icon></div>
       <h3>Remote-Friendly</h3>
-      <p>Experienced in remote collaboration with clear communication and documentation</p>
+      <p>Experienced in working across distributed teams, with a focus on over-communication and rigorous documentation to keep projects moving forward.</p>
     </div>
     
     <div class="work-style-card">
-      <div class="ws-icon">🔄</div>
-      <h3>Agile Mindset</h3>
-      <p>Iterative approach with regular feedback and continuous improvement</p>
+      <div class="ws-icon"><iconify-icon icon="mdi:loop" width="48" style="color:#f7f9fc"></iconify-icon></div>
+      <h3>The Feedback Loop</h3>
+      <p>I treat feedback as a catalyst. A way to improve and grow, not just receiving but also giving.</p>
     </div>
     
     <div class="work-style-card">
-      <div class="ws-icon">🤝</div>
-      <h3>Collaborative</h3>
-      <p>Cross-functional teamwork with stakeholders from all backgrounds</p>
+      <div class="ws-icon"><iconify-icon icon="fluent:people-team-16-filled" width="48" style="color:#f7f9fc"></iconify-icon></div>
+      <h3>Team‑First Mindset</h3>
+      <p>I prioritize the project’s success over personal ego. I am a firm believer that the best insights come from open-minded debate, and that being "wrong" is just a step toward getting the data right.</p>
     </div>
-    
-    <div class="work-style-card">
-      <div class="ws-icon">📚</div>
-      <h3>Detail-Oriented</h3>
-      <p>Clean code, thorough documentation, and maintainable solutions</p>
-    </div>
-  </div>
-</div>
-
-<!-- Beyond Work -->
-<div class="content-section fade-in">
-  <h2>Beyond Data</h2>
-  
-  <div class="beyond-work">
-    <div class="interest-card">
-      <div class="interest-icon">🎨</div>
-      <h3>Design Enthusiast</h3>
-      <p>I'm constantly exploring modern web design trends and UI/UX principles. Good design isn't just about looks—it's about making things work better.</p>
-    </div>
-    
-    <div class="interest-card">
-      <div class="interest-icon">🌍</div>
-      <h3>Barcelona Life</h3>
-      <p>Living in Barcelona has given me an appreciation for creativity, innovation, and the perfect blend of tradition and modernity.</p>
-    </div>
-    
-    <div class="interest-card">
-      <div class="interest-icon">📚</div>
-      <h3>Continuous Learner</h3>
-      <p>Technology evolves fast, and I love keeping up. Currently exploring advanced machine learning and cloud technologies.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Fun Facts -->
-<div class="content-section fade-in">
-  <h2>Fun Facts</h2>
-  
-  <div class="fun-facts-container">
-    <ul class="fun-facts-list">
-      <li class="fun-fact-item">
-        <span class="fact-icon">☕</span>
-        <span class="fact-text">Coffee enthusiast—my best analyses happen after the second cup</span>
-      </li>
-      <li class="fun-fact-item">
-        <span class="fact-icon">📚</span>
-        <span class="fact-text">Currently reading: [Your favorite book or learning resource]</span>
-      </li>
-      <li class="fun-fact-item">
-        <span class="fact-icon">🎮</span>
-        <span class="fact-text">Favorite way to debug: Take a walk and let the solution come to me</span>
-      </li>
-      <li class="fun-fact-item">
-        <span class="fact-icon">🌟</span>
-        <span class="fact-text">Dream project: Building analytics tools that drive social impact</span>
-      </li>
-      <li class="fun-fact-item">
-        <span class="fact-icon">🗣️</span>
-        <span class="fact-text">Speak three languages: Spanish, English, and Catalan</span>
-      </li>
-      <li class="fun-fact-item">
-        <span class="fact-icon">🎯</span>
-        <span class="fact-text">Believe that good data viz can change minds and drive action</span>
-      </li>
-    </ul>
   </div>
 </div>
 
