@@ -42,7 +42,7 @@ title: About Me
   <div class="approach-grid">
     <div class="approach-card">
       <div class="approach-icon">
-        <iconify-icon icon="mdi:lightbulb-on-90" width="48" style="color:#f7f9fc"></iconify-icon>
+        <iconify-icon icon="mdi:lightbulb-on-90" width="52" style="color:#4cc9a6"></iconify-icon>
       </div>
       <h3>Business-Driven Analytics</h3>
       <p>I focus on the "why" behind the data, ensuring every technical solution drives a measurable business outcome.</p>
@@ -50,7 +50,7 @@ title: About Me
     
     <div class="approach-card">
       <div class="approach-icon">
-      <iconify-icon icon="mdi:clock-fast" width="48" style="color:#f7f9fc"></iconify-icon>
+      <iconify-icon icon="mdi:clock-fast" width="52" style="color:#4cc9a6"></iconify-icon>
       </div>
       <h3>Rapid, Adaptive Learning</h3>
       <p>My career shift reflects my adaptability. I take on steep learning curves with enthusiasm and approach technical challenges as problems waiting to be decoded.</p>
@@ -58,16 +58,10 @@ title: About Me
     
     <div class="approach-card">
       <div class="approach-icon">
-      <iconify-icon icon="stash:arrows-switch-solid" width="48" style="color:#f7f9fc"></iconify-icon>
+      <iconify-icon icon="stash:arrows-switch-solid" width="52" style="color:#4cc9a6"></iconify-icon>
       </div>
       <h3>Automation Mindset</h3>
       <p>I build for efficiency. By automating the routine, I ensure my time is spent on high-value analysis rather than manual maintenance.</p>
-    </div>
-    
-    <div class="approach-card">
-      <div class="approach-icon">🤝</div>
-      <h3>Data Interpreter</h3>
-      <p>I turn complex data into clear, actionable insights, bridging the gap between technical detail and confident decision‑making.</p>
     </div>
   </div>
 </div>
@@ -129,17 +123,17 @@ title: About Me
   
   <div class="philosophy-content">
     <div class="philosophy-item">
-      <h3><iconify-icon icon="healthicons:register-book-outline" width="48" style="color:#f7f9fc"></iconify-icon> Story-Driven Data</h3>
+      <h3><iconify-icon icon="healthicons:register-book-outline" width="40" style="color:#4cc9a6"></iconify-icon> Story-Driven Data</h3>
       <p>I treat every dataset as a story waiting to be told. My goal is to uncover the underlying narrative and present it in a way that resonates with the audience’s specific goals and pain points.</p>
     </div>
     
     <div class="philosophy-item">
-      <h3><iconify-icon icon="oui:question-in-circle" width="48" style="color:#f7f9fc"></iconify-icon> Question Everything</h3>
+      <h3><iconify-icon icon="oui:question-in-circle" width="40" style="color:#4cc9a6"></iconify-icon> Question Everything</h3>
       <p>Good analysis starts with good questions. I approach every project with curiosity, challenging assumptions and digging deeper to find the real insights beneath the surface.</p>
     </div>
     
     <div class="philosophy-item">
-      <h3><iconify-icon icon="icon-park-twotone:six-circular-connection" width="48" style="color:#f7f9fc"></iconify-icon> Holistic View</h3>
+      <h3><iconify-icon icon="icon-park-twotone:six-circular-connection" width="40" style="color:#4cc9a6"></iconify-icon> Holistic View</h3>
       <p>I look at how data points connect across different departments, ensuring that a solution for one team doesn't create a problem for another.</p>
     </div>
   </div>
@@ -151,19 +145,19 @@ title: About Me
   
   <div class="work-style-grid">
     <div class="work-style-card">
-      <div class="ws-icon"><iconify-icon icon="streamline-ultimate:meeting-remote" width="48" style="color:#f7f9fc"></iconify-icon></div>
+      <div class="ws-icon"><iconify-icon icon="streamline-ultimate:meeting-remote" width="52" style="color:#4cc9a6"></iconify-icon></div>
       <h3>Remote-Friendly</h3>
       <p>Experienced in working across distributed teams, with a focus on over-communication and rigorous documentation to keep projects moving forward.</p>
     </div>
     
     <div class="work-style-card">
-      <div class="ws-icon"><iconify-icon icon="mdi:loop" width="48" style="color:#f7f9fc"></iconify-icon></div>
+      <div class="ws-icon"><iconify-icon icon="mdi:loop" width="52" style="color:#4cc9a6"></iconify-icon></div>
       <h3>The Feedback Loop</h3>
       <p>I treat feedback as a catalyst. A way to improve and grow, not just receiving but also giving.</p>
     </div>
     
     <div class="work-style-card">
-      <div class="ws-icon"><iconify-icon icon="fluent:people-team-16-filled" width="48" style="color:#f7f9fc"></iconify-icon></div>
+      <div class="ws-icon"><iconify-icon icon="fluent:people-team-16-filled" width="52" style="color:#4cc9a6"></iconify-icon></div>
       <h3>Team‑First Mindset</h3>
       <p>I prioritize the project’s success over personal ego. I am a firm believer that the best insights come from open-minded debate, and that being "wrong" is just a step toward getting the data right.</p>
     </div>
