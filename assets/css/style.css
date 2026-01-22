@@ -483,7 +483,7 @@ body {
 }
 
 .cert-badge-visual::before {
-  content: '🏆';
+  content: '<wa-icon name="trophy" style="font-size: 0.625em; color: #f7f9fc;"></wa-icon>';
   font-size: var(--text-xl);
 }
 
