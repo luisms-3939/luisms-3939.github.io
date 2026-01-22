@@ -77,38 +77,43 @@ title: About Me
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <div class="timeline-year">2022 - Present</div>
-        <h3>Customer Service & Back Office Specialist | H&M Group</h3>
-        <p><strong>Operational Efficiency:</strong> Developed custom workload templates to visualize team tasks, enabling data-informed prioritization and improved workflow management.</p>
-        <p> **Technical Documentation**: Authored a comprehensive "IT User Guide" for staff, streamlining the resolution of customer account, app, and membership issues.</p>
-        <p>**Data Management**: Managed back-office operations including accurate data entry, order processing, and record maintenance to ensure operational integrity.</p>
-        <p>**Stakeholder Collaboration:** Partnered with cross-functional departments to resolve complex issues and maintain a seamless customer experience.</p>
+        <h3>Customer Service & Back Office Specialist | H&M Group, Barcelona</h3>
+        <p><strong>- Operational Efficiency:</strong> Developed custom workload templates to visualize team tasks, enabling data-informed prioritization and improved workflow management.</p>
+        <p><strong>- Technical Documentation:</strong> Authored a comprehensive "IT User Guide" for staff, streamlining the resolution of customer account, app, and membership issues.</p>
+        <p><strong>- Data Management:</strong> Managed back-office operations including accurate data entry, order processing, and record maintenance to ensure operational integrity.</p>
+        <p><strong>- Stakeholder Collaboration:</strong> Partnered with cross-functional departments to resolve complex issues and maintain a seamless customer experience.</p>
       </div>
     </div>
     
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-year">2025</div>
-        <h3>Google Data Analytics Certification</h3>
-        <p>Mastered the complete data analytics workflow—from data cleaning to visualization and storytelling.</p>
+        <div class="timeline-year">2022</div>
+        <h3>Customer Service Agent | Guess, Barcelona</h3>
+        <p><strong>- Process Optimization:</strong> Collaborated with team members to identify service bottlenecks and implement efficient delivery solutions.</p>
+        <p><strong>- International Operations:</strong> Supported global expansion efforts by translating digital content into Portuguese, ensuring technical accuracy across regions.</p>
+        <p><strong>- Issue Resolution:</strong> Acted as a primary point of contact for complex inquiries, utilizing problem-solving methodologies to maintain high satisfaction levels.</p>
       </div>
     </div>
     
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-year">2025</div>
-        <h3>UX Design & Project Management</h3>
-        <p>Gained expertise in user-centered design and Agile project management methodologies.</p>
+        <div class="timeline-year">2017 - 2021</div>
+        <h3>Assistant Manager | La Cava, Ibiza</h3>
+        <p><strong>Resource Planning:</strong> Oversaw daily business operations, managing inventory levels and optimizing staff schedules to meet demand.</p>
+        <p><strong>Training & Leadership:</strong> Responsible for training new employees on company policies, procedures, and service standards to ensure consistency.</p>
+        <p><strong>Performance Monitoring:</strong> Monitored customer satisfaction metrics and implemented process improvements to enhance the overall guest experience.</p>
       </div>
     </div>
     
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-year">2025</div>
-        <h3>IT Automation with Python</h3>
-        <p>Developed skills in automation, version control, and infrastructure management.</p>
+        <div class="timeline-year">2013 - 2017</div>
+        <h3>Visual Merchandiser | H&M, Barcelona</h3>
+        <p><strong>- Strategic Planning:</strong> Executed merchandising strategies based on sales data and trend analysis to maximize store traffic and revenue.</p>
+        <p><strong>- Project Execution:</strong> Planned and executed large-scale visual displays, collaborating with the sales team to align aesthetic goals with commercial targets.</p>
       </div>
     </div>
   </div>
