@@ -6,7 +6,7 @@ title: About Me
 <!-- Hero Introduction -->
 <div class="about-hero fade-in">
   <div class="about-hero-content">
-    <h1>Hi, I'm Luis 👋</h1>
+    <h1>Hi, I'm Luis </h1>
     <p class="hero-lead">
       I'm a data analyst based in Barcelona, passionate about transforming complex data into clear, actionable insights that drive real business impact.
     </p>
@@ -19,15 +19,18 @@ title: About Me
   
   <div class="story-content">
     <p class="about-text">
-      My journey into data analytics started with a simple question: <strong>"How can we make better decisions?"</strong> This curiosity led me down a path of discovering how data, when analyzed correctly, can tell powerful stories and reveal hidden opportunities.
+      For over 10 years, I thrived in the fast-paced world of customer service at global brands like H&M and Guess. While I loved solving immediate problems for people, I became fascinated by the "why" behind the patterns I saw. 
     </p>
     
     <p class="about-text">
-      With a background spanning data science, UX design, and IT automation, I bring a unique perspective to analytics. I don't just crunch numbers—I craft narratives that help teams understand what the data is really saying and what actions to take next.
+      In 2025, I took a leave of absence to immerse myself in personal growth, and expand horizons. And I didn't just learn one tool; I mastered the entire ecosystem - from Python automation and SQL databases to Machine Learning and UX Design. My goal is to use data not just to find numbers, but to find the stories that help businesses grow and serve their customers better. 
     </p>
     
     <p class="about-text">
-      Today, I specialize in building clean, scalable analytics systems—from automated pipelines to interactive dashboards. My work blends technical rigor with strong UI/UX instincts, ensuring that insights aren't just accurate, but also accessible and actionable for everyone.
+      My transition into Data Science wasn't a sudden shift, but an evolution. While working as a Customer Service Specialist at H&M, I realized that efficiency starts with clear data. I took the initiative to design a workload template that allowed my team to visualize the tasks, enabling better prioritization and more balanced operations.
+    </p>
+    <p class="about-text">
+      I also recognized a gap in how we handled technical escalations. To bridge it, I authored a comprehensive IT User Guide, creating step-by-step protocols for resolving the most common issues. These experiences - balancing user needs with system logic - drove me to formalize my skills through Google and IBM professional certifications in Data Science, Python, and UX Design. 
     </p>
   </div>
 </div>
@@ -38,7 +41,9 @@ title: About Me
   
   <div class="approach-grid">
     <div class="approach-card">
-      <div class="approach-icon">🎯</div>
+      <div class="approach-icon">
+        <iconify-icon icon="estreamline-cyber:business-target" width="48" style="color:#f7f9fc"></iconify-icon>
+      </div>
       <h3>Focus on Impact</h3>
       <p>I don't just deliver reports—I deliver insights that drive decisions. Every analysis starts with understanding the business question and ends with clear, actionable recommendations.</p>
     </div>
@@ -71,9 +76,12 @@ title: About Me
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-year">2025</div>
-        <h3>Completed IBM Data Science Certificate</h3>
-        <p>Expanded expertise in machine learning and generative AI applications for data science.</p>
+        <div class="timeline-year">2022 - Present</div>
+        <h3>Customer Service & Back Office Specialist | H&M Group</h3>
+        <p>**Operational Efficiency:** Developed custom workload templates to visualize team tasks, enabling data-informed prioritization and improved workflow management.</p>
+        <p> **Technical Documentation**: Authored a comprehensive "IT User Guide" for staff, streamlining the resolution of customer account, app, and membership issues.</p>
+        <p>**Data Management**: Managed back-office operations including accurate data entry, order processing, and record maintenance to ensure operational integrity.</p>
+        <p>**Stakeholder Collaboration:** Partnered with cross-functional departments to resolve complex issues and maintain a seamless customer experience.</p>
       </div>
     </div>
     
