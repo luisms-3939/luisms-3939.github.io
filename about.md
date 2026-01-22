@@ -41,9 +41,7 @@ title: About Me
   
   <div class="approach-grid">
     <div class="approach-card">
-      <div class="approach-icon">
-        <iconify-icon icon="estreamline-cyber:business-target" width="48" style="color:#f7f9fc"></iconify-icon>
-      </div>
+      <div class="approach-icon"><iconify-icon icon="estreamline-cyber:business-target" width="48" style="color:#f7f9fc"></iconify-icon></div>
       <h3>Focus on Impact</h3>
       <p>I don't just deliver reports—I deliver insights that drive decisions. Every analysis starts with understanding the business question and ends with clear, actionable recommendations.</p>
     </div>
@@ -101,9 +99,9 @@ title: About Me
       <div class="timeline-content">
         <div class="timeline-year">2017 - 2021</div>
         <h3>Assistant Manager | La Cava, Ibiza</h3>
-        <p><strong>Resource Planning:</strong> Oversaw daily business operations, managing inventory levels and optimizing staff schedules to meet demand.</p>
-        <p><strong>Training & Leadership:</strong> Responsible for training new employees on company policies, procedures, and service standards to ensure consistency.</p>
-        <p><strong>Performance Monitoring:</strong> Monitored customer satisfaction metrics and implemented process improvements to enhance the overall guest experience.</p>
+        <p><strong>- Resource Planning:</strong> Oversaw daily business operations, managing inventory levels and optimizing staff schedules to meet demand.</p>
+        <p><strong>- Training & Leadership:</strong> Responsible for training new employees on company policies, procedures, and service standards to ensure consistency.</p>
+        <p><strong>- Performance Monitoring:</strong> Monitored customer satisfaction metrics and implemented process improvements to enhance the overall guest experience.</p>
       </div>
     </div>
     
