@@ -41,7 +41,7 @@ title: Certifications
     <!-- View Toggle -->
     <div style="display: flex; gap: 0.5rem;">
       <button onclick="switchView('timeline')" id="timelineBtn" class="view-toggle-btn active">
-        <iconify-icon icon="material-symbols:timeline" width="48" style="color:#f7f9fc"></iconify-icon> Timeline
+        <iconify-icon icon="material-symbols:timeline" width="24" style="color:#f7f9fc"></iconify-icon> Timeline
       </button>
       <button onclick="switchView('grid')" id="gridBtn" class="view-toggle-btn">
         <iconify-icon icon="material-symbols:grid-view-outline-rounded" width="48" style="color:#f7f9fc"></iconify-icon> Grid
