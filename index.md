@@ -10,7 +10,7 @@ title: Home
       Hi, I'm <span class="highlight">Luis Modesto</span>
     </h1>
     <p class="hero-subtitle">
-      Data Analyst | Process Optimizer | Customer Experience Strategist
+      Data Analyst | Process Optimizer | Customer Experience Specialist
     </p>
     <p class="hero-description">
       I transform complex datasets into actionable business stories. With a decade of experience in customer operations and a suite of professional certifications in Data Science and Automation, I bridge the gap between technical analysis and human-centric solutions.
@@ -78,7 +78,7 @@ title: Home
     
     <div class="what-i-do-card">
       <div class="wid-icon">
-        <iconify-icon icon="material-symbols-light:mobile-layout-outline" width="48" style="color:#f3f7fc"></iconify-icon>
+        <iconify-icon icon="vscode-icons:file-type-tmux" width="48"></iconify-icon>
           </div>
       <h3>UI/UX Design</h3>
       <p>Designing user-centered interfaces and experiences that are both functional and delightful to use.</p>
