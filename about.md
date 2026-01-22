@@ -123,17 +123,17 @@ title: About Me
   
   <div class="philosophy-content">
     <div class="philosophy-item">
-      <h3><iconify-icon icon="healthicons:register-book-outline" width="24" style="color:#4cc9a6"></iconify-icon> Story-Driven Data</h3>
+      <h3>Story-Driven Data</h3>
       <p>I treat every dataset as a story waiting to be told. My goal is to uncover the underlying narrative and present it in a way that resonates with the audience’s specific goals and pain points.</p>
     </div>
     
     <div class="philosophy-item">
-      <h3><iconify-icon icon="oui:question-in-circle" width="24" style="color:#4cc9a6"></iconify-icon> Question Everything</h3>
+      <h3>Question Everything</h3>
       <p>Good analysis starts with good questions. I approach every project with curiosity, challenging assumptions and digging deeper to find the real insights beneath the surface.</p>
     </div>
     
     <div class="philosophy-item">
-      <h3><iconify-icon icon="icon-park-twotone:six-circular-connection" width="24" style="color:#4cc9a6"></iconify-icon> Holistic View</h3>
+      <h3>Holistic View</h3>
       <p>I look at how data points connect across different departments, ensuring that a solution for one team doesn't create a problem for another.</p>
     </div>
   </div>
