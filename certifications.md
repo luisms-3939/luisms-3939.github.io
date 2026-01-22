@@ -44,7 +44,7 @@ title: Certifications
         <iconify-icon icon="material-symbols:timeline" width="24" style="color:#f7f9fc"></iconify-icon> Timeline
       </button>
       <button onclick="switchView('grid')" id="gridBtn" class="view-toggle-btn">
-        <iconify-icon icon="material-symbols:grid-view-outline-rounded" width="48" style="color:#f7f9fc"></iconify-icon> Grid
+        <iconify-icon icon="material-symbols:grid-view-outline-rounded" width="24" style="color:#f7f9fc"></iconify-icon> Grid
       </button>
     </div>
   </div>
@@ -112,7 +112,7 @@ title: Certifications
         <div class="timeline-cert-actions">
           <a href="{{ cert.url }}" class="timeline-btn timeline-btn-primary">View Details →</a>
           {% if cert.certificate_url and cert.certificate_url != '#' %}
-          <a href="{{ cert.certificate_url }}" target="_blank" class="timeline-btn timeline-btn-secondary"> <iconify-icon icon="game-icons:diploma" width="48" style="color:#f7f9fc"></iconify-icon> Cert</a>
+          <a href="{{ cert.certificate_url }}" target="_blank" class="timeline-btn timeline-btn-secondary"> <iconify-icon icon="game-icons:diploma" width="24" style="color:#f7f9fc"></iconify-icon> Cert</a>
           {% endif %}
         </div>
       </div>
