@@ -3,10 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://luisms-3939/",
+  "homepage": "https://luisms-3939.github.io",
   "scripts": {
     "dev": "vite",
-    "build": "tsc & & vite build",
+    "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
