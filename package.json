@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://luisms-3939.github.io",
+  "homepage": "https://luisms-3939.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc & & vite build",
