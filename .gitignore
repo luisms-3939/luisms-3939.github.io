@@ -21,3 +21,15 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Build files
+build/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# OS files
+Thumbs.db
